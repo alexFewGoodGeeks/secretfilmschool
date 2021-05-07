@@ -37,6 +37,7 @@
                     <label class="col-md-3 col-form-label">Status</label>
                     <div class="col-md-9">
                         <div class="radio radio-css">
+                            <label></label>
                             {{ Form::label('status_active', 'Active') }}
                             {{ Form::radio('status', 'active', true) }}
                         </div>
@@ -47,6 +48,8 @@
                         <div class="radio radio-css is-valid">
                             {{ Form::label('status_draft', 'Draft') }}
                             {{ Form::radio('status', 'draft', true, ['id' => 'status_draft']) }}
+
+
                         </div>
                     </div>
                 </div>
