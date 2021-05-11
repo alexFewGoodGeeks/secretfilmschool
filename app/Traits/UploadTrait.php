@@ -16,6 +16,6 @@ trait UploadTrait
 
         $uploadedFile->storeAs($folder, $name, $disk);
 
-        return $folder . $name. '.' . $uploadedFile->getClientOriginalExtension();
+        return $folder . $name;
     }
 }

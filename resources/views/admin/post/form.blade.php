@@ -36,20 +36,21 @@
                 <div class="form-group row m-b-10">
                     <label class="col-md-3 col-form-label">Status</label>
                     <div class="col-md-9">
-                        <div class="radio radio-css">
-                            <label></label>
-                            {{ Form::label('status_active', 'Active') }}
-                            {{ Form::radio('status', 'active', true) }}
+                        <div class="form-check">
+                            @if ($type == 'create')
+                                <input class="form-check-input is-valid" type="radio" name="status" id="statusActive" value="active" checked />
+                            @else
+                                <input class="form-check-input is-valid" type="radio" name="status" id="statusActive" value="active"  {{ $post->status == 'active' ? 'checked="checked"' : '' }} />
+                            @endif
+                            <label class="form-check-label" for="statusActive">Active</label>
                         </div>
-                        <div class="radio radio-css is-invalid">
-                            {{ Form::label('status_inactive', 'Inactive') }}
-                            {{ Form::radio('status', 'inactive') }}
+                        <div class="form-check">
+                            <input class="form-check-input is-invalid" type="radio" name="status" id="statusInactive" value="inactive"  {{ $post->status == 'inactive' ? 'checked="checked"' : '' }} />
+                            <label class="form-check-label" for="statusInactive">Inactive</label>
                         </div>
-                        <div class="radio radio-css is-valid">
-                            {{ Form::label('status_draft', 'Draft') }}
-                            {{ Form::radio('status', 'draft', true, ['id' => 'status_draft']) }}
-
-
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="status" id="statusDraft" value="draft"  {{ $post->status == 'draft' ? 'checked="checked"' : '' }} />
+                            <label class="form-check-label" for="statusDraft">Draft</label>
                         </div>
                     </div>
                 </div>
@@ -59,7 +60,7 @@
             <div class="col-md-12">
                 <div class="form-group row m-b-10">
                     <label class="col-md-3 col-form-label">Featured image</label>
-                    <div class="col-md-9">
+                    <div class="col-md-9 row">
                         @if($post->featured_image)
                             <img src="{{ $post->featured_image }}" class="rounded img-thumbnail" />
                         @endif
@@ -70,6 +71,34 @@
                     </div>
                 </div>
             </div>
+
+            <hr/>
+            <div class="col-md-12">
+                <div class="form-group row m-b-10">
+                    <label class="col-md-3 col-form-label">Time to read</label>
+                    <div class="col-md-9 row">
+                        {{ Form::number('time_to_read', $post->time_to_read, ['class' => 'form-control m-b-5']) }}
+                        @error('time_to_read')
+                            <small class="f-s-12 text-grey-darker">{{ $message }}</small>
+                        @endif
+                    </div>
+                </div>
+            </div>
+
+            <hr/>
+            <div class="col-md-12">
+                <div class="form-group row m-b-10">
+                    <label class="col-md-3 col-form-label">@lang('messages.seo_keywords')</label>
+                    <div class="col-md-9 row">
+                        <textarea class="form-control" name="seo_keywords">{{ $post->seo_keywords }}</textarea>
+                        <small class="f-s-12 text-grey-darker">@lang('messages.separate_with_comma')</small>
+                        @error('seo_keywords')
+                            <small class="f-s-12 text-grey-darker">{{ $message }}</small>
+                        @endif
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

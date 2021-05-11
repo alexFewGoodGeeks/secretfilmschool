@@ -94,7 +94,14 @@ class PostController extends Controller
 
     public function update(UpdatePostRequest $request)
     {
-        $post = $this->postRepository->update($request->id, $request->validated());
+
+        if ($request->hasFile('featured_image')) {
+            $this->postRepository->update($request->id, array_merge($request->validated(), [
+                'featured_image' => $this->upload($request->file('featured_image'))
+            ]));
+        } else {
+            $post = $this->postRepository->update($request->id, $request->validated());
+        }
 
         return redirect()
             ->route('admin.posts.index')
@@ -107,8 +114,12 @@ class PostController extends Controller
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Post $post)
+    public function destroy(Request $request)
     {
-        //
+        $this->postRepository->delete($request->id);
+
+        return redirect()
+            ->route('admin.posts.index')
+            ->with(['success' => 'Post was deleted']);
     }
 }

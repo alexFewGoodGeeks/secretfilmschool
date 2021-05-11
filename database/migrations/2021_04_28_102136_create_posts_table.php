@@ -19,6 +19,8 @@ class CreatePostsTable extends Migration
             $table->string('slug')->nullable();
             $table->longText('content');
             $table->string('featured_image');
+            $table->integer('time_to_read')->default(0);
+            $table->text('seo_keywords')->nullable();
             $table->foreignId('user_id');
             $table->foreignId('post_category_id');
             $table->enum('status', ['active', 'inactive', 'archived', 'draft'])

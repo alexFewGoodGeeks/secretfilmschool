@@ -13,9 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [\App\Http\Controllers\Pages\HomeController::class, 'index'])
+    ->name('homepage');
 
 Auth::routes();
 
@@ -34,6 +33,8 @@ Route::group(['prefix'=>'admin','as'=>'admin.', 'middleware' => 'auth'], functio
         ->name('posts.edit');
     Route::put('posts/{id}', [\App\Http\Controllers\Admin\PostController::class, 'update'])
         ->name('posts.update');
+    Route::delete('posts/{id}', [\App\Http\Controllers\Admin\PostController::class, 'destroy'])
+        ->name('posts.delete');
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

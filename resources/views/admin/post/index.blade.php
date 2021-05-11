@@ -1,31 +1,28 @@
 @extends('layouts.admin.app')
 
 @section('content')
-<h1 class="page-header">Show all posts</h1>
-
+<div class="col-md-12 inline">
+    <h1 class="page-header">@lang('messages.show_all_posts')</h1>
+</div>
 <div class="panel panel-inverse">
     <div class="panel-heading">
         <h4 class="panel-title">
-            Show all posts
+            @lang('messages.show_all_posts')
         </h4>
-        <div class="panel-heading-btn">
-            <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
-            <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a>
-            <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
-            <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
-        </div>
+        <a href="{{ route('admin.posts.create') }}" class="btn btn-indigo">New post <i class="fa fas fa-plus"></i></a>
     </div>
     <div class="panel-body">
+        @include('admin.includes.flash')
         <div class="table-responsive">
             <table class="table" id="posts-table">
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Title</th>
-                        <th>Featured image</th>
-                        <th>Status</th>
-                        <td>Created at</td>
-                        <td>Actions</td>
+                        <th>@lang('messages.title')</th>
+                        <th>@lang('messages.featured_image')</th>
+                        <th>@lang('messages.status')</th>
+                        <td>@lang('messages.created_at')</td>
+                        <td>@lang('messages.actions')</td>
                     </tr>
                 </thead>
                 <tbody>
@@ -34,7 +31,7 @@
                         <td>{{ $post->id }}</td>
                         <td>{{ $post->title }}</td>
                         <td><img src="{{ $post->featured_image }}" class="rounded" height="80" width="80"></td>
-                        <td>{{ $post->status }}</td>
+                        <td>@include('admin.post.status')</td>
                         <td>{{ $post->created_at->diffForHumans() }}</td>
                         <td>
                             <a href="" title="Preview">
@@ -43,8 +40,12 @@
                             <a href="{{ route('admin.posts.edit', $post->id) }}" title="Edit">
                                 <i class="fas fa-lg fa-fw m-r-5 fa-edit"></i>
                             </a>
-                            <a href="" title="Delete">
+                            <a href="" title="Delete" class="delete-item" >
                                 <i class="fas fa-lg fa-fw m-r-5 fa-trash"></i>
+                                <form class="delete-form" data-item-id="{{ $post->id }}" action="{{ route('admin.posts.delete', $post->id) }}" method="POST" class="d-none">
+                                    @method('delete')
+                                    @csrf
+                                </form>
                             </a>
                         </td>
                     </tr>
@@ -63,5 +64,13 @@
             responsive: true,
             "order": [[0, "desc"]]
         });
+
+        $(".delete-item").click(function(e) {
+            var _this = $(this);
+            e.preventDefault();
+            if (confirm("Delete?")) {
+                _this.find(".delete-form")[0].submit();
+            }
+        })
     </script>
 @endsection

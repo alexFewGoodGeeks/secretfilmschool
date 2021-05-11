@@ -11,15 +11,23 @@ class Post extends Model
 {
     use HasFactory, SoftDeletes, Sluggable;
 
+    /**
+     * @var string[]
+     */
     protected $fillable = [
         'title',
         'content',
         'featured_image',
         'user_id',
+        'time_to_read',
+        'seo_keywords',
         'post_category_id',
         'status'
     ];
 
+    /**
+     * @var string[]
+     */
     protected $dates = ['created_at', 'updated_at', 'deleted_at'];
 
     /**

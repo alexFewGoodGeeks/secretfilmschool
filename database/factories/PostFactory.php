@@ -27,6 +27,7 @@ class PostFactory extends Factory
             'featured_image' => $this->faker->imageUrl(),
             'user_id' => 1,
             'post_category_id' => 1,
+            'time_to_read' => rand(1, 5),
             'status' => 'active'
         ];
     }
