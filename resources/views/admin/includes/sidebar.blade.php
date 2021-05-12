@@ -45,7 +45,7 @@
                     <span>Settings</span>
                 </a>
                 <ul class="sub-menu">
-                    <li><a href="index.html">Page settings</a></li>
+                    <li><a href="{{ route('admin.settings.index') }}">Page settings</a></li>
                     <li><a href="index_v2.html">SEO</a></li>
                 </ul>
             </li>

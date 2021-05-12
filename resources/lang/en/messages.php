@@ -16,5 +16,8 @@ return [
     'edit_post' => 'Edit post',
     'save' => 'Save',
     'seo_keywords' => 'SEO keywords',
-    'separate_with_comma' => 'separate with comma'
+    'separate_with_comma' => 'separate with comma',
+    'site_name' => 'Site name',
+    'google_analytics' => 'Google Analytics',
+    'general_site_settings' => 'General site settings'
 ];

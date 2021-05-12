@@ -23,6 +23,9 @@ Route::group(['prefix'=>'admin','as'=>'admin.', 'middleware' => 'auth'], functio
         ->name('dashboard');
 
 
+    /**
+     * Post routes
+     */
     Route::get('posts', [\App\Http\Controllers\Admin\PostController::class, 'index'])
         ->name('posts.index');
     Route::get('posts/create', [\App\Http\Controllers\Admin\PostController::class, 'create'])
@@ -35,6 +38,15 @@ Route::group(['prefix'=>'admin','as'=>'admin.', 'middleware' => 'auth'], functio
         ->name('posts.update');
     Route::delete('posts/{id}', [\App\Http\Controllers\Admin\PostController::class, 'destroy'])
         ->name('posts.delete');
+
+
+    /**
+     * Settings routes
+     */
+    Route::get('settings', [\App\Http\Controllers\Admin\SettingsController::class, 'index'])
+        ->name('settings.index');
+    Route::post('settings', [\App\Http\Controllers\Admin\SettingsController::class, 'store'])
+        ->name('settings.store');
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
