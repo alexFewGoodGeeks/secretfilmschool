@@ -27,25 +27,31 @@
                 </a>
             </li>
 
-            <li class="has-sub">
+            <li class="has-sub  {{ request()->is('admin/posts*') ? 'active' : '' }}">
                 <a href="javascript:;">
                     <b class="caret"></b>
                     <i class="fa fa-th-large"></i>
                     <span>Posts</span>
                 </a>
                 <ul class="sub-menu">
-                    <li><a href="{{ route('admin.posts.create') }}">Add post</a></li>
-                    <li><a href="{{ route('admin.posts.index') }}">Show Posts</a></li>
+                    <li class="{{request()->is('admin/posts/create') ? 'active' : '' }}">
+                        <a href="{{ route('admin.posts.create') }}">Add post</a>
+                    </li>
+                    <li class="{{ request()->is('admin/posts') ? 'active' : '' }}">
+                        <a href="{{ route('admin.posts.index') }}">Show Posts</a>
+                    </li>
                 </ul>
             </li>
-            <li class="has-sub">
+            <li class="has-sub {{ request()->is('admin/settings*') ? 'active' : '' }}">
                 <a href="javascript:;">
                     <b class="caret"></b>
                     <i class="fa fa-th-large"></i>
                     <span>Settings</span>
                 </a>
                 <ul class="sub-menu">
-                    <li><a href="{{ route('admin.settings.index') }}">Page settings</a></li>
+                    <li class="{{ request()->is('admin/settings') ? 'active' : '' }}">
+                        <a href="{{ route('admin.settings.index') }}">Page settings</a>
+                    </li>
                     <li><a href="index_v2.html">SEO</a></li>
                 </ul>
             </li>
