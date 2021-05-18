@@ -19,5 +19,9 @@ return [
     'separate_with_comma' => 'separate with comma',
     'site_name' => 'Site name',
     'google_analytics' => 'Google Analytics',
-    'general_site_settings' => 'General site settings'
+    'general_site_settings' => 'General site settings',
+    'profile' => 'Profile',
+    'settings' => 'Settings',
+    'dashboard' => 'Dashboard',
+    'posts' => 'Posts'
 ];

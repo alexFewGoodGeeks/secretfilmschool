@@ -47,6 +47,21 @@ Route::group(['prefix'=>'admin','as'=>'admin.', 'middleware' => 'auth'], functio
         ->name('settings.index');
     Route::post('settings', [\App\Http\Controllers\Admin\SettingsController::class, 'store'])
         ->name('settings.store');
+
+
+    /**
+     * Profile routes
+     */
+    Route::get('profile', [\App\Http\Controllers\Admin\ProfileController::class, 'index'])
+        ->name('profile.index');
+    Route::put('profile', [\App\Http\Controllers\Admin\ProfileController::class, 'update'])
+        ->name('profile.update');
+
+    /**
+     * Password routes
+     */
+    Route::put('password', [\App\Http\Controllers\Admin\PasswordController::class, 'update'])
+        ->name('password.update');
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

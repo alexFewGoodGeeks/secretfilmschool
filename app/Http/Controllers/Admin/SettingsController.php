@@ -10,13 +10,23 @@ use Spatie\LaravelSettings\Settings;
 
 class SettingsController extends Controller
 {
+    /**
+     * @var SettingsRepository
+     */
     protected $settingsRepository;
 
+    /**
+     * SettingsController constructor.
+     * @param SettingsRepository $settingsRepository
+     */
     public function __construct(SettingsRepository $settingsRepository)
     {
         $this->settingsRepository = $settingsRepository;
     }
 
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
     public function index()
     {
         return view('admin.settings.index')->with([
@@ -24,6 +34,10 @@ class SettingsController extends Controller
         ]);
     }
 
+    /**
+     * @param UpdateSettingsRequest $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function store(UpdateSettingsRequest $request)
     {
         $this->settingsRepository->site_name = $request->site_name;

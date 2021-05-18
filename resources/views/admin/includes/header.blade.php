@@ -14,10 +14,10 @@
         <li class="dropdown navbar-user">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <img src="/admin/img/user/user-13.jpg" alt="" />
-                <span class="d-none d-md-inline">Adam Schwartz</span> <b class="caret"></b>
+                <span class="d-none d-md-inline">{{$currentUser->name}} {{$currentUser->last_name}}</span> <b class="caret"></b>
             </a>
             <div class="dropdown-menu dropdown-menu-right">
-                <a href="javascript:;" class="dropdown-item">Edit Profile</a>
+                <a href="{{ route('admin.profile.update') }}" class="dropdown-item">Edit Profile</a>
                 <div class="dropdown-divider"></div>
                 <a onclick="event.preventDefault();
                      document.getElementById('logout-form').submit();" class="dropdown-item">Log Out</a>

@@ -16,16 +16,30 @@ class PostController extends Controller
 {
     use UploadTrait;
 
+    /**
+     * @var PostInterface
+     */
     protected $postRepository;
+
+    /**
+     * @var UserInterface
+     */
     protected $userRepository;
 
+    /**
+     * PostController constructor.
+     * @param PostInterface $postRepository
+     * @param UserInterface $userRepository
+     */
     public function __construct(PostInterface $postRepository, UserInterface $userRepository)
     {
         $this->postRepository = $postRepository;
         $this->userRepository = $userRepository;
     }
 
-
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
     public function index()
     {
         $posts = $this->postRepository->getLatest();
@@ -36,6 +50,9 @@ class PostController extends Controller
 
     }
 
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
     public function create()
     {
         $post = new Post();
@@ -46,10 +63,8 @@ class PostController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param CreatePostRequest $request
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(CreatePostRequest $request)
     {
@@ -67,21 +82,8 @@ class PostController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Post  $post
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Post $post)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Post  $post
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function edit(Request $request)
     {
@@ -92,6 +94,10 @@ class PostController extends Controller
         ]);
     }
 
+    /**
+     * @param UpdatePostRequest $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function update(UpdatePostRequest $request)
     {
 

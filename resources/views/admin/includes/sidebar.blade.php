@@ -11,7 +11,7 @@
                         <img src="/admin/img/user/user-13.jpg" alt="" />
                     </div>
                     <div class="info">
-                        John Doe
+                        {{$currentUser->name}} {{$currentUser->last_name}}
                         <small>Film Director</small>
                     </div>
                 </a>
@@ -23,7 +23,7 @@
             <li>
                 <a href="{{ route('admin.dashboard') }}">
                     <i class="fa fa-th-large"></i>
-                    <span>Dashboard</span>
+                    <span>@lang('messages.dashboard')</span>
                 </a>
             </li>
 
@@ -31,7 +31,7 @@
                 <a href="javascript:;">
                     <b class="caret"></b>
                     <i class="fa fa-th-large"></i>
-                    <span>Posts</span>
+                    <span>@lang('messages.posts')</span>
                 </a>
                 <ul class="sub-menu">
                     <li class="{{request()->is('admin/posts/create') ? 'active' : '' }}">

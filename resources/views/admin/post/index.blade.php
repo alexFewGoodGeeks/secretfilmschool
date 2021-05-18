@@ -1,9 +1,18 @@
 @extends('layouts.admin.app')
 
 @section('content')
-<div class="col-md-12 inline">
-    <h1 class="page-header">@lang('messages.show_all_posts')</h1>
+<div class="row">
+    <div class="col-md-12 inline">
+        <h1 class="page-header">@lang('messages.show_all_posts')</h1>
+    </div>
 </div>
+
+<div class="row">
+    <div class="col-md-12 inline panel-body">
+        @include('admin.includes.flash')
+    </div>
+</div>
+
 <div class="panel panel-inverse">
     <div class="panel-heading">
         <h4 class="panel-title">
@@ -12,7 +21,6 @@
         <a href="{{ route('admin.posts.create') }}" class="btn btn-indigo">New post <i class="fa fas fa-plus"></i></a>
     </div>
     <div class="panel-body">
-        @include('admin.includes.flash')
         <div class="table-responsive">
             <table class="table" id="posts-table">
                 <thead>
