@@ -1,3 +1,7 @@
+@extends('layouts.public.app')
+
+
+@section('content')
 <h1>Blog home</h1>
 
 
@@ -10,3 +14,6 @@
 @endforeach
 
 {{ $posts->links() }}
+
+
+@endsection
