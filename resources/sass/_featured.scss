@@ -1,0 +1,103 @@
+.featured-section-wrapper {
+    background-color: $featured_section_background;
+    padding: 4rem 0;
+    h2 {
+        padding-bottom: 0.5rem;
+    }
+    .featured-logo {
+        padding: 0.5rem;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+.inside-sfs-wrapper {
+    background-color: $inside_sfs_wrapper_background;
+    padding: 4rem 0;
+    .inside-sfs-text {
+        h2, p {
+            color: $white;
+        }
+        h2 {
+            text-transform: uppercase;
+        }
+    }
+    .inside-sfs-content {
+        p {
+            color: $white;
+            padding-bottom: 0.1rem;
+            margin-bottom: 0.1rem;
+        }
+        a {
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+
+.testimonials-wrapper {
+    background-color: $testimonial_wrapper_background;
+    padding: 6rem 0;
+
+    .testimonial-avatar, .testimonial-content {
+        padding: 1rem;
+    }
+    .testimonial-content {
+        .testimonial-text, .testimonial-author {
+            color: $white;
+        }
+    }
+}
+
+.sfs-modules-wrapper {
+    background-color: $sfs_modules_wrapper_background;
+    #modules-nav .nav-item .active .module-nav-subtitle, .module-nav-title {
+        display: none;
+    }
+    .tab-content {
+        padding: 4rem 0;
+
+        .module-content {
+            h2, h3, p {
+                color: $white;
+            }
+        }
+    }
+    #modules-nav {
+        .nav-item {
+            margin: 0!important;
+            padding: 0 !important;
+            &.active {
+                .module-nav-title, .module-nav-subtitle {
+                    display: none;
+                }
+            }
+        }
+        .module-nav-item {
+            min-height: 500px ;
+            width: 100% ;
+            background-size: cover !important;
+        }
+        .module-one {
+            background: url(/images/module_one_nav.jpg);
+        }
+        .module-two {
+            background: url(/images/module_two_nav.jpg);
+        }
+        .module-three {
+            background: url(/images/module_three_nav.jpg);
+        }
+    }
+}
+
+.faq-wrapper {
+    background-color: $faw_wrapper_background;
+    padding: 4rem 0;
+    h2, p {
+        color: $white;
+    }
+
+}

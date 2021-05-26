@@ -1,0 +1,13 @@
+.sfs-btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 60px;
+    color: $btn-text;
+    text-transform: uppercase;
+}
+.sfs-btn-yellow {
+    background-color: $btn-yellow;
+    &:hover {
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
