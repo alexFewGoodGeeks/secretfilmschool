@@ -1,13 +1,27 @@
-
-.logo {
-    img {
-        width: 200px;
-        height: 50px;
+.main {
+    &.inactive {
+        z-index: -9999;
+        opacity: 0.7;
     }
 }
 
+.logo {
+    img {
+        //width: 200px;
+        height: 50px;
+    }
+}
+.hamburger-nav {
+    width: 50px;
+    cursor: pointer;
+}
 .navbar {
     background-color: transparent;
+    z-index: 999;
+    padding-top: 3rem;
+    .nav-link {
+        cursor: pointer;
+    }
 }
 header {
     margin-top: -8rem;
@@ -17,6 +31,9 @@ header {
         max-width: 100%;
         min-width: 100%;
         width: 100%;
+        @media (min-width: 1440px) {
+            margin-top: -14rem;
+        }
         //max-height: 90vh;
     }
 }
@@ -24,17 +41,46 @@ header {
 
 .heading-text-wrapper {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 0;
     right: 0;
     margin: auto;
     .heading-text {
+        padding: 0;
         &.title-text {
-            h1, h2 {
+            h1 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 1.25rem;
+            }
+            h1, p {
                 color: $white;
                 float:left;
-                text-transform: uppercase;
                 text-align: left;
+            }
+        }
+    }
+    .cta-button {
+        .cta-wrapper {
+            float: right;
+
+            p {
+                color: $white;
+                font-family: $montserratFontFamily;
+
+                &:nth-child(2) {
+                    font-size: 0.8rem;
+                    margin: 0;
+                    padding: 0.5rem 0 0 0;
+                }
+
+                &:nth-child(3) {
+                    font-size: 1.5rem;
+                    font-family: $helveticaNeue;
+                    margin: 0;
+                    padding: 0;
+                }
             }
         }
     }

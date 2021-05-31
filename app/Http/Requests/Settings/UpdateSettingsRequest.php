@@ -25,7 +25,10 @@ class UpdateSettingsRequest extends FormRequest
     {
         return [
             'site_name' => 'required|min:10,max:200',
-            'google_analytics' => 'required'
+            'google_analytics' => 'required',
+            'inside_sfs_link' => 'required',
+            'free_scholarship_link' => 'required',
+            'free_webinar_snippet' => 'required'
         ];
     }
 }

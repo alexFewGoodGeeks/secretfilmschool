@@ -42,6 +42,9 @@ class SettingsController extends Controller
     {
         $this->settingsRepository->site_name = $request->site_name;
         $this->settingsRepository->google_analytics = $request->google_analytics;
+        $this->settingsRepository->inside_sfs_link = $request->inside_sfs_link;
+        $this->settingsRepository->free_scholarship_link = $request->free_scholarship_link;
+        $this->settingsRepository->free_webinar_snippet = $request->free_webinar_snippet;
 
         $this->settingsRepository->save();
 

@@ -2,7 +2,13 @@
     padding: 0.8rem 1.5rem;
     border-radius: 60px;
     color: $btn-text;
+    font-weight: bold;
     text-transform: uppercase;
+    font-family: $montserratFontFamily;
+    border: none;
+    &:hover {
+        color: $btn-text;
+    }
 }
 .sfs-btn-yellow {
     background-color: $btn-yellow;
@@ -10,4 +16,11 @@
         text-transform: uppercase;
         text-decoration: none;
     }
+}
+
+.btn-scroll {
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+    border: none;
 }

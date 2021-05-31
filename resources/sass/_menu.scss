@@ -1,0 +1,45 @@
+#main-menu {
+
+    position: fixed;
+    height: 100%;
+    background-color: $left_menu_background;
+
+
+    @media (min-width: 1440px) {
+        width: 350px;
+        right: -350px;
+        padding: 4rem 2.5rem;
+    }
+
+    top: 0;
+    z-index: 90000;
+    transition: ease-in-out 0.4s;
+    &.active {
+        right: 0;
+        transition: ease-in-out 0.2s;
+    }
+    a {
+        color: $white;
+    }
+
+    .menu-header  {
+
+    }
+    .hamburger-nav-close {
+        width: 50px;
+    }
+
+    .right-menu {
+        list-style: none;
+        padding: 3rem 0 0 0;
+        li {
+            padding-bottom: 1rem;
+            a {
+                font-family: $helveticaNeue;
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+    }
+}

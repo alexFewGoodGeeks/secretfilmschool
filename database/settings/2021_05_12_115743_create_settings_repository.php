@@ -8,5 +8,9 @@ class CreateSettingsRepository extends SettingsMigration
     {
         $this->migrator->add('general.site_name', 'SecretFilmSchool');
         $this->migrator->add('general.google_analytics', 'UA-85086862-1');
+
+        $this->migrator->add('general.free_webinar_snippet', '&nbsp');
+        $this->migrator->add('general.inside_sfs_link', 'https://secretfilmschool.com');
+        $this->migrator->add('general.free_scholarship_link', 'https://secretfilmschool.com');
     }
 }

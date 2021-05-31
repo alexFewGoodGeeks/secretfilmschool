@@ -23,5 +23,8 @@ return [
     'profile' => 'Profile',
     'settings' => 'Settings',
     'dashboard' => 'Dashboard',
-    'posts' => 'Posts'
+    'posts' => 'Posts',
+    'inside_sfs_link' => 'Inside SFS link',
+    'free_scholarship_link' => 'Free scholarship link',
+    'free_webinar_snippet' => 'Free webinar snippet'
 ];
