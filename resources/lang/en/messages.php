@@ -26,5 +26,9 @@ return [
     'posts' => 'Posts',
     'inside_sfs_link' => 'Inside SFS link',
     'free_scholarship_link' => 'Free scholarship link',
-    'free_webinar_snippet' => 'Free webinar snippet'
+    'free_webinar_snippet' => 'Free webinar snippet',
+    'fb_link' => 'Facebook link',
+    'yt_link' => 'Youtube link',
+    'tw_link' => 'Twitter link',
+    'ig_link' => 'Instagram link'
 ];

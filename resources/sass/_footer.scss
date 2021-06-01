@@ -1,0 +1,31 @@
+.footer {
+    .social-media-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .social-media-list {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            margin:0;
+            padding: 0;
+            .social-media-item {
+                padding: 1rem;
+                .social-media-icon {
+                    width: 36px;
+                    height: auto;
+                }
+                .fb-icon {
+
+                }
+                .tw-icon {
+
+                }
+                .ig-icon {
+                }
+                .yt-icon {
+                }
+            }
+        }
+    }
+}

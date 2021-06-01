@@ -10135,6 +10135,25 @@ header {
   padding: 0;
 }
 
+.footer .social-media-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .social-media-wrapper .social-media-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+.footer .social-media-wrapper .social-media-list .social-media-item {
+  padding: 1rem;
+}
+.footer .social-media-wrapper .social-media-list .social-media-item .social-media-icon {
+  width: 36px;
+  height: auto;
+}
 h1, h2, h3 {
   font-family: "Helvetica Neue Condensed Black";
 }

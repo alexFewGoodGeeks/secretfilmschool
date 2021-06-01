@@ -28,7 +28,11 @@ class UpdateSettingsRequest extends FormRequest
             'google_analytics' => 'required',
             'inside_sfs_link' => 'required',
             'free_scholarship_link' => 'required',
-            'free_webinar_snippet' => 'required'
+            'free_webinar_snippet' => 'required',
+            'fb_link' => 'string',
+            'yt_link' => 'string',
+            'tw_link' => 'string',
+            'ig_link' => 'nullable'
         ];
     }
 }

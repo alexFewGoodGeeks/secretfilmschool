@@ -11,6 +11,11 @@ class SettingsRepository extends Settings
     public $free_scholarship_link;
     public $free_webinar_snippet;
 
+    public $fb_link;
+    public $ig_link;
+    public $yt_link;
+    public $tw_link;
+
     public static function group(): string
     {
         return "general";

@@ -46,6 +46,12 @@ class SettingsController extends Controller
         $this->settingsRepository->free_scholarship_link = $request->free_scholarship_link;
         $this->settingsRepository->free_webinar_snippet = $request->free_webinar_snippet;
 
+        $this->settingsRepository->fb_link = $request->fb_link;
+        $this->settingsRepository->yt_link = $request->yt_link;
+        $this->settingsRepository->tw_link = $request->tw_link;
+        $this->settingsRepository->ig_link = $request->ig_link;
+
+
         $this->settingsRepository->save();
 
         return redirect()
