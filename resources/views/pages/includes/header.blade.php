@@ -3,7 +3,10 @@
     <div class="container">
         <a class="navbar-brand " id="sidebarCollapse" href="/">
             <div class="logo">
-                <img src="{{ asset('images/logo.svg') }}"
+                <img class="logo-d" src="{{ asset('images/logo.svg') }}"
+                     alt="SecretFilm School Logo"
+                     title="SecretFilm School logo" />
+                <img class="logo-r" src="{{ asset('images/logo_small.svg') }}"
                      alt="SecretFilm School Logo"
                      title="SecretFilm School logo" />
             </div>
@@ -17,8 +20,3 @@
         </div>
     </div>
 </nav>
-
-
-@section('custom_js')
-
-@endsection

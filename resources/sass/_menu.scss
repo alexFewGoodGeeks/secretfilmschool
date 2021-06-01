@@ -3,12 +3,12 @@
     position: fixed;
     height: 100%;
     background-color: $left_menu_background;
-
-
-    @media (min-width: 1440px) {
-        width: 350px;
-        right: -350px;
-        padding: 4rem 2.5rem;
+    padding: 4rem 2.5rem;
+    width: 300px;
+    right: -300px;
+    @media(min-width: 1024px) {
+        width: 370px;
+        right: -370px;
     }
 
     top: 0;

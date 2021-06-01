@@ -16,6 +16,12 @@ h1, h2, h3 {
         line-height: 1.5;
         color: #69696C;
     }
+    @media(max-width: 1200px) {
+        .featured-section-logos {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
     .featured-logo {
         padding: 0.8rem;
         img {
@@ -68,6 +74,9 @@ h1, h2, h3 {
 .inside-sfs-wrapper {
     background-color: $inside_sfs_wrapper_background;
     padding: 4rem 0;
+    @media(max-width: 768px) {
+        text-align: center;
+    }
     .inside-sfs-text {
         h2, p {
             color: $white;
@@ -188,6 +197,9 @@ h1, h2, h3 {
                     font-family: $montserratFontFamily;
                     color: $white;
                     font-size: 2rem;
+                    @media(max-width: 1024px) {
+                        font-size: 1.5rem;
+                    }
                     text-transform: uppercase;
                     padding-bottom: 3rem;
                     padding-top: 1rem;
@@ -196,6 +208,12 @@ h1, h2, h3 {
                     font-family: $helveticaNeue;
                     color: $white;
                     font-size: 4rem;
+                    @media(max-width: 1024px) {
+                        font-size: 3rem;
+                    }
+                    @media(max-width: 768px) {
+                        font-size: 2.4rem;
+                    }
                     text-transform: uppercase;
                     line-height: 1.2;
                 }
@@ -209,6 +227,9 @@ h1, h2, h3 {
         }
         .module-nav-item {
             min-height: 590px ;
+            @media(max-width: 1024px) {
+                min-height: 490px;
+            }
             width: 100% ;
             background-size: cover !important;
         }
@@ -227,6 +248,9 @@ h1, h2, h3 {
 .about-simon-wrapper {
     background-color: $about_simon_wrapper_background;
     padding: 4rem 0;
+    @media(max-width: 540px) {
+        flex-direction: column;
+    }
 
         .one-to-one-wrapper {
             display: flex;
@@ -242,10 +266,17 @@ h1, h2, h3 {
                 padding: 1rem 0;
             }
             .one-to-one-image {
+                @media(max-width: 768px) {
+                    display: none;
+                }
                 img {
                     margin-top: -3rem;
+
                     width: 650px;
-                    margin-right: -200px;
+                    @media(max-width: 1200px) {
+                        width: 450px;
+                    }
+                    //margin-right: -200px;
                     opacity: 0.8;
                 }
             }
@@ -253,6 +284,11 @@ h1, h2, h3 {
         .about-image {
             img {
                 max-height: 400px;
+                @media(max-width: 540px) {
+                    height: auto;
+                    max-height:670px;
+                    width: 100%;
+                }
             }
         }
         .about-content {
@@ -263,6 +299,9 @@ h1, h2, h3 {
             justify-content: center;
             align-items: center;
             padding: 2rem 4rem;
+            @media (max-width: 768px) {
+                padding: 1.5rem 3rem;
+            }
             h2 {
                 font-size: 2rem;
                 line-height: 1.5;
