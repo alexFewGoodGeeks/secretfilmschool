@@ -27,6 +27,7 @@ h1, h2, h3 {
         img {
            // width: 100%;
             height: 40px;
+            opacity: 0.5;
         }
     }
 }
@@ -40,15 +41,25 @@ h1, h2, h3 {
         h2 {
             text-align: center;
             color: $header_headline_text;
-            font-size: 1.7rem;
+            font-size: 2rem;
             line-height: 1.5;
         }
     }
 }
 
-.step-by-step-video-wrapper {
+.step-by-step-content-wrapper {
+    padding: 4rem;
     background-color: $step_by_step_wrapper_background;
-    padding: 4rem 0;
+    text-align: center;
+    h2 {
+        color: $white;
+        font-size: 2.5rem;
+        line-height: 1.5;
+    }
+}
+.step-by-step-video-wrapper {
+    background-color: $step_by_step_video_backgroubd;//$step_by_step_wrapper_background;
+   // padding-top: 4rem;
     .sbs-content {
         margin: 0 auto;
         .sbs-title {
@@ -123,7 +134,17 @@ h1, h2, h3 {
     padding: 6rem 0;
     .testimonial-avatar {
         img {
-            width: 200px;
+            width: 150px;
+        }
+    }
+    @media(max-width: 500px) {
+        .testimonial-item {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .testimonial-content {
+                text-align: center;
+            }
         }
     }
     .testimonial-avatar, .testimonial-content {
@@ -156,7 +177,7 @@ h1, h2, h3 {
         display: none;
     }
     .modules-nav-images {
-        max-width: 1600px;
+        //max-width: 1600px;
         margin: 0 auto;
 
     }
@@ -174,7 +195,7 @@ h1, h2, h3 {
                 font-size: 1rem;
             }
             h2, h3, p {
-                color: $white;
+                color: $black;
                 line-height: 1.5;
             }
         }
@@ -226,7 +247,15 @@ h1, h2, h3 {
             }
         }
         .module-nav-item {
-            min-height: 590px ;
+
+            @media(min-width: 1024px) {
+                min-height:610px ;
+            }
+
+            @media(min-width: 1400px) {
+                min-height:680px ;
+            }
+
             @media(max-width: 1024px) {
                 min-height: 490px;
             }
@@ -241,6 +270,23 @@ h1, h2, h3 {
         }
         .module-three {
             background: url(/images/module_three_nav.jpg);
+        }
+    }
+
+    .modules-m {
+        display: none;
+    }
+    @media(min-width: 768px) {
+        #modules-m {
+            display: none;
+        }
+    }
+    @media(max-width: 768px) {
+        #modules-d {
+            display: none;
+        }
+        #modules-m {
+            display: block;
         }
     }
 }

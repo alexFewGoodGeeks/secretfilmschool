@@ -29,6 +29,14 @@ jQuery(function() {
         }, 2000);
     });
 
+    $("#modules-nav li.nav-item").click(function() {
+        var scrollTo = "sfs-modules";
+
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#" + scrollTo).offset().top
+        }, 500);
+    })
+
     $(document).mouseup(function(e)
     {
         var container = $("#main-menu");

@@ -56,9 +56,7 @@
                     <div class="form-group row m-b-15">
                         <label class="col-form-label col-md-3">@lang('messages.free_webinar_snippet')</label>
                         <div class="col-md-9">
-                            <textarea rows="5" name="free_webinar_snippet" class="form-control">
-                                {{ $settings->free_webinar_snippet }}
-                            </textarea>
+                            {{ Form::text('free_webinar_snippet', $settings->free_webinar_snippet, ['class' => 'form-control']) }}
                             @error('free_webinar_snippet')
                             <small class="f-s-12 text-grey-darker">{{ $message }}</small>
                             @endif
