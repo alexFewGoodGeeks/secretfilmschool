@@ -6,6 +6,7 @@ use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Psy\Util\Str;
 
 class Post extends Model
 {
@@ -25,6 +26,7 @@ class Post extends Model
         'status'
     ];
 
+
     /**
      * @var string[]
      */
@@ -42,5 +44,10 @@ class Post extends Model
                 'source' => 'title'
             ]
         ];
+    }
+
+    public function getContentIntroAttribute($value)
+    {
+        return \Str::words($this->content, 50);
     }
 }

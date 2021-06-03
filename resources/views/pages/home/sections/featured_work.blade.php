@@ -1,5 +1,5 @@
 <section id="featured-section" class="featured-section-wrapper">
-    <div class="container featured-section">
+    <div class=" featured-section">
         <p class="d-flex justify-content-center small-heading">Simon’s work has featured here: </p>
         <div class="featured-section-logos d-flex justify-content-center">
             <div class="featured-logo logo">

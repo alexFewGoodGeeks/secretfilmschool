@@ -1,8 +1,9 @@
 <section id="header-headline" class="header-headline-wrapper">
     <div class="container">
         <div class="headline-text-content">
-            <h2>90% OF INDEPENDENT FILMMAKERS FAIL WITH THEIR FIRST MOVIE.</h2>
-            <h2>WHY? BECAUSE TALEN AND PASSION ONLY TAKE YOU SO FAR.</h2>
+            <h2>WHY DO OVER 90% OF INDEPENDENT FILMMAKERS FAIL WITH THEIR FIRST MOVIE?</h2>
+{{--            <h2>WHY? BECAUSE TALEN AND PASSION ONLY TAKE YOU SO FAR.</h2>--}}
+            <h3>BECAUSE WITHOUT THE RIGHT ROADMAP TALENT AND PASSION WILL ONLT TAKE YOU SO FAR.</h3>
         </div>
     </div>
 </section>

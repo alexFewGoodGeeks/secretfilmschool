@@ -1,0 +1,48 @@
+.blog-bg-image {
+    background: url(/images/blog_heading.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+}
+
+.blog-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1 {
+        color: $white;
+        font-size: 3rem;
+    }
+}
+
+.module {
+    position: relative;
+}
+.module::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url(/images/blog_heading.jpg);
+    filter: brightness(40%);
+}
+.module-inside {
+    /* This will make it stack on top of the ::before */
+    position: relative;
+}
+
+.blog-container {
+    padding: 6rem 0;
+    .post-wrapper {
+        .post-content-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        &.odd {
+            .row {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+}

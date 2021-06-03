@@ -52,5 +52,20 @@ class HomePageSeoRepository extends AbstractSeoRepository
     public function getPageKeywords()
     {
         // TODO: Implement getPageKeywords() method.
+        $words = [
+            'BEST FILM SCHOOLS',
+            'BEST FILM SCHOOLS IN THE WORLD',
+            'TOP FILM SCHOOLS',
+            'FILM MAKING COURSES',
+            'FILM MARKETING',
+            'FILM DISTRIBUTION',
+            'MOVIE DISTRIBUTION',
+            'ONLINE FILM SCHOOL',
+            'ONLINE FILMMAKING COURSES',
+            'ONLINE FILM COURSES',
+            'ONLINE FILM CLASSES'
+        ];
+
+        return implode("," , $words);
     }
 }

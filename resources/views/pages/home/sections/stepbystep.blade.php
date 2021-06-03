@@ -17,7 +17,7 @@
 {{--                <h2>AND GET PAID TO MAKE THE FILMS YOU LOVE TO MAKE</h2>--}}
 {{--            </div>--}}
             <div class="sbs-video">
-                <img src="{{ asset('images/sbs-video.png') }}"  class="promo-image"/>
+                <img src="{{ asset('images/sbs-video.jpeg') }}"  class="promo-image"/>
                 <video loop controls="controls" id="promoVideo" class="promo-video d-none">
                     <source src="{{ asset('images/video.mp4') }}" type="video/ogg">
                 </video>
