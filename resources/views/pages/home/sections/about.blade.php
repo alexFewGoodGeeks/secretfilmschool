@@ -23,13 +23,8 @@
             </div>
             <div class="about-content">
                 <h2>ABOUT SIMON</h2>
-                <p>Independent filmmaker Simon Sharman singlehandedly took his
-                    first indie feature to global audiences where it was accepted by
-                    international film festivals before selling the title for international
-                    distribution across multiple global streaming channels.</p>
-                <p>Before making his first movie Simon worked as a journalist for the
-                    BBC, and has produced TV shows for channels in the US, Australia
-                    and all across Europe.</p>
+                <p>Independent filmmaker Simon Sharman understands how difficult it is to achieve success with any movie when you don’t have those important industry contacts and when your bank balance isn’t bursting with dollars. That’s why he spent years figuring out how to make it when you’re on your own, and by applying what he discovered was how he took his first low budget indie feature to global audiences via the film festivals before selling his movie for international distribution.</p>
+                <p>Previous to making films and creating Secret Film School, Simon worked as a journalist for the BBC and has produced TV shows for channels in the US, Australia and throughout Europe.</p>
             </div>
         </div>
     </div>

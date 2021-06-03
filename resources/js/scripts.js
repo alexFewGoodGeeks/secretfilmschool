@@ -8,7 +8,7 @@ jQuery(function() {
         videoPlayer.play();
     })
 
-    $("#sidebarCollapse, .hamburger-nav").click(function() {
+    $("#navbarSupportedContent, .hamburger-nav").click(function() {
         $(this).hide();
         $(".main").addClass('inactive');
         $("#main-menu").addClass('active');

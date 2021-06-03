@@ -15,6 +15,9 @@ h1, h2, h3 {
         font-size: 1.7rem;
         line-height: 1.5;
         color: #69696C;
+        @media(max-width: 768px) {
+            text-align: center;
+        }
     }
     @media(max-width: 1200px) {
         .featured-section-logos {
@@ -41,6 +44,9 @@ h1, h2, h3 {
         h2 {
             text-align: center;
             color: $header_headline_text;
+            @media(max-width: 768px) {
+                font-size: 1.3rem;
+            }
             font-size: 2rem;
             line-height: 1.5;
         }
@@ -54,10 +60,18 @@ h1, h2, h3 {
     h2 {
         color: $white;
         font-size: 2.5rem;
+        @media(max-width: 768px) {
+            font-size: 1.8rem;
+        }
         line-height: 1.5;
     }
 }
 .step-by-step-video-wrapper {
+    h2 {
+        @media(max-width: 768px) {
+            font-size: 1.5rem;
+        }
+    }
     background-color: $step_by_step_video_backgroubd;//$step_by_step_wrapper_background;
    // padding-top: 4rem;
     .sbs-content {
@@ -68,6 +82,9 @@ h1, h2, h3 {
             h2 {
                 color: $white;
                 font-size: 2.5rem;
+                @media(max-width: 768px) {
+                    font-size: 1.5rem;
+                }
                 line-height: 1.5;
             }
         }
@@ -323,7 +340,7 @@ h1, h2, h3 {
                         width: 450px;
                     }
                     //margin-right: -200px;
-                    opacity: 0.8;
+                    //opacity: 0.8;
                 }
             }
         }

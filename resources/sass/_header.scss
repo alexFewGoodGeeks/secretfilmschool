@@ -63,9 +63,9 @@ header {
 
 .heading-text-wrapper {
     position: absolute;
-    top: 30%;
+    top: 35%;
     @media(max-width: 1024px) {
-        top: 20%;
+        top: 25%;
     }
     left: 0;
     right: 0;
@@ -86,7 +86,7 @@ header {
                 }
             }
             h1, p {
-                color: $white;
+                color: $header_video_text;
                 float:left;
                 text-align: left;
             }

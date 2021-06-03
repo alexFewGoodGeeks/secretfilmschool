@@ -10077,14 +10077,14 @@ header {
 
 .heading-text-wrapper {
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 0;
   right: 0;
   margin: auto;
 }
 @media (max-width: 1024px) {
   .heading-text-wrapper {
-    top: 20%;
+    top: 25%;
   }
 }
 .heading-text-wrapper .heading-text {
@@ -10107,7 +10107,7 @@ header {
   }
 }
 .heading-text-wrapper .heading-text.title-text h1, .heading-text-wrapper .heading-text.title-text p {
-  color: #ffffff;
+  color: #8BB9CE;
   float: left;
   text-align: left;
 }
@@ -10176,6 +10176,11 @@ h1, h2, h3 {
   line-height: 1.5;
   color: #69696C;
 }
+@media (max-width: 768px) {
+  .featured-section-wrapper p {
+    text-align: center;
+  }
+}
 @media (max-width: 1200px) {
   .featured-section-wrapper .featured-section-logos {
     flex-direction: column;
@@ -10204,6 +10209,11 @@ h1, h2, h3 {
   font-size: 2rem;
   line-height: 1.5;
 }
+@media (max-width: 768px) {
+  .header-headline-wrapper .headline-text-content h2 {
+    font-size: 1.3rem;
+  }
+}
 
 .step-by-step-content-wrapper {
   padding: 4rem;
@@ -10215,9 +10225,19 @@ h1, h2, h3 {
   font-size: 2.5rem;
   line-height: 1.5;
 }
+@media (max-width: 768px) {
+  .step-by-step-content-wrapper h2 {
+    font-size: 1.8rem;
+  }
+}
 
 .step-by-step-video-wrapper {
   background-color: #000;
+}
+@media (max-width: 768px) {
+  .step-by-step-video-wrapper h2 {
+    font-size: 1.5rem;
+  }
 }
 .step-by-step-video-wrapper .sbs-content {
   margin: 0 auto;
@@ -10230,6 +10250,11 @@ h1, h2, h3 {
   color: #ffffff;
   font-size: 2.5rem;
   line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .step-by-step-video-wrapper .sbs-content .sbs-title h2 {
+    font-size: 1.5rem;
+  }
 }
 .step-by-step-video-wrapper .sbs-content .promo-image {
   cursor: pointer;
@@ -10476,7 +10501,6 @@ h1, h2, h3 {
 .about-simon-wrapper .one-to-one-wrapper .one-to-one-image img {
   margin-top: -3rem;
   width: 650px;
-  opacity: 0.8;
 }
 @media (max-width: 1200px) {
   .about-simon-wrapper .one-to-one-wrapper .one-to-one-image img {
@@ -10646,7 +10670,17 @@ h1, h2, h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
 }
+@media (max-width: 768px) {
+  .card .card-header a span:nth-child(1) {
+    font-size: 1.2rem;
+  }
+}
 .card .card-header a span:nth-child(2) {
   font-family: "Helvetica Neue Condensed Black";
   font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .card .card-header a span:nth-child(2) {
+    font-size: 1.6rem;
+  }
 }
