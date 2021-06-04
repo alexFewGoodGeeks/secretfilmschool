@@ -15,7 +15,7 @@ class SeoPageManager
             return new HomePageSeoRepository();
         }
 
-        if (request()->is('blog*')) {
+        if (request()->is('article*') || request()->is('blog*')) {
             return new BlogPageRepository();
         }
 

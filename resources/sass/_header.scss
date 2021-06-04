@@ -50,12 +50,22 @@ header {
         @media (min-width: 1440px) {
             margin-top: -14rem;
         }
+
         @media(max-width: 540px) {
             position: absolute;
             object-fit: cover;
             width: 160%;
-            height: 62%;
+            height: 72%;
         }
+
+        @media(max-width: 425px) {
+            height: 72%;
+        }
+
+        @media(max-width: 376px) {
+            height: 82%;
+        }
+
         //max-height: 90vh;
     }
 }
@@ -93,6 +103,9 @@ header {
         }
     }
     .cta-button {
+        @media (max-width: 768px) {
+            margin-top:1rem;
+        }
         .cta-wrapper {
             float: right;
             @media(max-width: 768px) {

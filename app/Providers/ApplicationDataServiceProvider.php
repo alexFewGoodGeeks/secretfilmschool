@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Providers;
+use Illuminate\Pagination\Paginator;
+
 
 use App\Repositories\Contracts\UserInterface;
 use Illuminate\Support\ServiceProvider;
@@ -24,6 +26,8 @@ class ApplicationDataServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Paginator::useBootstrap();
+
         view()->composer(['admin.includes.*'], function($view) {
             $userRepo = app(UserInterface::class);
 

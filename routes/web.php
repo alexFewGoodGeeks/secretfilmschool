@@ -67,5 +67,5 @@ Route::group(['prefix'=>'admin','as'=>'admin.', 'middleware' => 'auth'], functio
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-Route::get('blog', [\App\Http\Controllers\Blog::class, 'index'])->name('blog.home');
-Route::get('article/{slug}', [\App\Http\Controllers\Blog::class, 'article'])->name('blog.article');
+Route::get('blog', [\App\Http\Controllers\BlogController::class, 'index'])->name('blog.home');
+Route::get('article/{slug}', [\App\Http\Controllers\BlogController::class, 'article'])->name('blog.article');

@@ -12,7 +12,7 @@
                     <p class="small-heading">The proven system to take your career all the way.</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-4 col-md-12 ">
                 <div class="heading-text cta-button ">
                     <div class="cta-wrapper">
                         <a href="{{ $settings->free_webinar_snippet }}" target="_blank" class="sfs-btn sfs-btn-yellow">GO TO FREE WEBINAR</a>

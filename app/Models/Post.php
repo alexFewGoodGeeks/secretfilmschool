@@ -46,6 +46,14 @@ class Post extends Model
         ];
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
     public function getContentIntroAttribute($value)
     {
         return \Str::words($this->content, 50);

@@ -1,4 +1,3 @@
-
 <footer id="footer" class="footer">
     <div class="social-media-wrapper">
         <ul class="social-media-list">

@@ -62,6 +62,9 @@ h1, h2, h3 {
             font-size: 1.8rem;
             line-height: 1.5;
             font-family: $montserratFontFamily !important;
+            @media(max-width: 768px) {
+                font-size: 1.3rem;
+            }
         }
     }
 }
@@ -76,7 +79,7 @@ h1, h2, h3 {
         font-family: $montserratFontFamily;
         font-style: italic;
         @media(max-width: 768px) {
-            font-size: 1.8rem;
+            font-size: 1.3rem;
         }
         line-height: 1.5;
     }
@@ -98,7 +101,7 @@ h1, h2, h3 {
                 color: $white;
                 font-size: 2.5rem;
                 @media(max-width: 768px) {
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
                 }
                 line-height: 1.5;
             }
@@ -332,6 +335,11 @@ h1, h2, h3 {
 
         .one-to-one-wrapper {
             display: flex;
+            @media(max-width: 425px) {
+                .sfs-btn {
+                    font-size: 14px;
+                }
+            }
             h2 {
                 font-size: 2rem;
                 color: $white;

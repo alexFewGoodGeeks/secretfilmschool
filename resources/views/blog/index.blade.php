@@ -4,18 +4,7 @@
 
     @include('pages.includes.header')
 
-    <header class="bg-image-full blog-bg-image module blog-heading">
-        <div class="text-center  container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="blog-heading-text title-text module-inside ">
-                        <h1>SECRET FILM SCHOOL BLOG</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
+    @include('blog.sections.header')
 
     <section class="blog-container">
         <div class="container">
@@ -29,12 +18,20 @@
                             </div>
                         </div>
                         <div class="post-content-wrapper col-lg-6 col-md-12">
-                            <h2>{{ $post->title }}</h2>
+                            <h2 class="content-title">{{ $post->title }}</h2>
+                            <div class="post-details">
+                                <div class="author">
+                                    <i class="far fa-user"></i> {{ $post->user->name }} {{ $post->user->last_name }}
+                                </div>
+                                <div class="time-to-read">
+                                    <i class="far fa-clock"></i> {{ $post->time_to_read }} <span class="min">min</span>
+                                </div>
+                            </div>
                             <div class="content-intro">
                                 {{ $post->content_intro }}
                             </div>
                             <div class="read-more-section">
-                                <a href="#" class="sfs-btn-yellow sfs-btn">Read more</a>
+                                <a href="/article/{{ $post->slug }}" class="sfs-btn-yellow sfs-btn">Read more</a>
                             </div>
                         </div>
 
@@ -42,10 +39,14 @@
                 </div>
             @endforeach
 
+            <div class="pagination">
+                {{ $posts->links() }}
+            </div>
         </div>
     </section>
 
+    <small style="display: none">{{ $settings->fb_link }}</small>
 
-
+    @include('pages.includes.footer')
 
 @endsection

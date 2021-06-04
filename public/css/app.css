@@ -10071,7 +10071,17 @@ header {
     -o-object-fit: cover;
        object-fit: cover;
     width: 160%;
-    height: 62%;
+    height: 72%;
+  }
+}
+@media (max-width: 425px) {
+  .video-heading video {
+    height: 72%;
+  }
+}
+@media (max-width: 376px) {
+  .video-heading video {
+    height: 82%;
   }
 }
 
@@ -10110,6 +10120,11 @@ header {
   color: #8BB9CE;
   float: left;
   text-align: left;
+}
+@media (max-width: 768px) {
+  .heading-text-wrapper .cta-button {
+    margin-top: 1rem;
+  }
 }
 .heading-text-wrapper .cta-button .cta-wrapper {
   float: right;
@@ -10227,6 +10242,11 @@ h1, h2, h3 {
   line-height: 1.5;
   font-family: "Montserrat", sans-serif !important;
 }
+@media (max-width: 768px) {
+  .header-headline-wrapper .headline-text-content h3 {
+    font-size: 1.3rem;
+  }
+}
 
 .step-by-step-content-wrapper {
   padding: 4rem;
@@ -10242,7 +10262,7 @@ h1, h2, h3 {
 }
 @media (max-width: 768px) {
   .step-by-step-content-wrapper h2 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -10268,7 +10288,7 @@ h1, h2, h3 {
 }
 @media (max-width: 768px) {
   .step-by-step-video-wrapper .sbs-content .sbs-title h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 .step-by-step-video-wrapper .sbs-content .promo-image {
@@ -10497,6 +10517,11 @@ h1, h2, h3 {
 .about-simon-wrapper .one-to-one-wrapper {
   display: flex;
 }
+@media (max-width: 425px) {
+  .about-simon-wrapper .one-to-one-wrapper .sfs-btn {
+    font-size: 14px;
+  }
+}
 .about-simon-wrapper .one-to-one-wrapper h2 {
   font-size: 2rem;
   color: #ffffff;
@@ -10700,6 +10725,14 @@ h1, h2, h3 {
   }
 }
 
+.pagination {
+  padding-top: 2rem;
+  justify-content: center;
+}
+.pagination .page-link {
+  font-family: "Helvetica Neue Condensed Black";
+}
+
 .blog-bg-image {
   background: url(/images/blog_heading.jpg);
   background-size: cover;
@@ -10741,9 +10774,40 @@ h1, h2, h3 {
 .blog-container {
   padding: 6rem 0;
 }
+.blog-container .post-wrapper {
+  padding: 2rem 0;
+}
 .blog-container .post-wrapper .post-content-wrapper {
   display: flex;
   flex-direction: column;
+}
+.blog-container .post-wrapper .post-content-wrapper .content-title {
+  font-family: "Helvetica Neue Condensed Black";
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+.blog-container .post-wrapper .post-content-wrapper .post-details {
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+}
+.blog-container .post-wrapper .post-content-wrapper .post-details .author, .blog-container .post-wrapper .post-content-wrapper .post-details .time-to-read {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  padding-right: 0.8rem;
+}
+.blog-container .post-wrapper .post-content-wrapper .content-intro {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.blog-container .post-wrapper .post-content-wrapper .read-more-section {
+  margin-top: 4rem !important;
+}
+@media (min-width: 800px) {
+  .blog-container .post-wrapper .post-content-wrapper .read-more-section {
+    margin: auto;
+  }
 }
 .blog-container .post-wrapper.odd .row {
   flex-direction: row-reverse;
