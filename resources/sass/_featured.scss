@@ -341,16 +341,22 @@ h1, h2, h3 {
             background-size: cover !important;
         }
         .module-one {
-            background: url(/images/module_one_nav.jpg);
+            background: url(/images/module_one_nav3.jpg);
+            &.active {
+                background: url(/images/module_one_nav.jpg);
+            }
+        }
+        .module-two {
+            background: url(/images/module_two_nav1.jpg);
             &.active {
                 background: url(/images/module_two_nav.jpg);
             }
         }
-        .module-two {
-            background: url(/images/module_two_nav.jpg);
-        }
         .module-three {
-            background: url(/images/module_three_nav.jpg);
+            background: url(/images/module_three_nav2.jpg);
+            &.active {
+                background: url(/images/module_three_nav.jpg);
+            }
         }
     }
 
