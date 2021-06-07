@@ -8,7 +8,7 @@
 
     <section class="blog-container">
         <div class="container">
-            @foreach($posts as $post)
+            @forelse($posts as $post)
 
                 <div class="post-wrapper {{ $loop->iteration % 2 === 0 ? "odd": "even" }}">
                     <div class="row">
@@ -18,7 +18,9 @@
                             </div>
                         </div>
                         <div class="post-content-wrapper col-lg-6 col-md-12">
-                            <h2 class="content-title">{{ $post->title }}</h2>
+                            <h2 class="content-title">
+                                <a href="/article/{{ $post->slug }}">{{ $post->title }}</a>
+                            </h2>
                             <div class="post-details">
                                 <div class="author">
                                     <i class="far fa-user"></i> {{ $post->user->name }} {{ $post->user->last_name }}
@@ -37,8 +39,9 @@
 
                     </div>
                 </div>
-            @endforeach
-
+            @empty
+                <h1>No posts were found yet!</h1>
+            @endforelse
             <div class="pagination">
                 {{ $posts->links() }}
             </div>

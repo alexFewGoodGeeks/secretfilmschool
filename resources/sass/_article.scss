@@ -1,0 +1,29 @@
+.article-wrapper {
+    padding: 4rem 0;
+    .title-wrapper {
+        display: flex;
+        justify-content: center;
+        h2 {
+            font-size: 3rem;
+            color: $black;
+        }
+
+    }
+    .details-wrapper {
+        display: flex;
+        justify-content: center;
+        .author, .time-to-read {
+            padding: 0 1rem;
+        }
+    }
+    .featured-image-wrapper {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .content-wrapper {
+        font-size: 1.2rem;
+        font-family: $openSansFontFamily;
+        line-height: 1.5;
+    }
+}

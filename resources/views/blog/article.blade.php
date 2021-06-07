@@ -6,11 +6,33 @@
 
     @include('blog.sections.header')
 
-        <h1> {{ $post->title }}</h1>
+    <section id="article" class="article-wrapper">
+        <div class="container">
+            <div class="title-wrapper">
+                <h2> {{ $post->title }}</h2>
+            </div>
 
-        <pre>{{ $post->content }}</pre>
+            <div class="details-wrapper">
+                <div class="author">
+                    <i class="far fa-user"></i> {{ $post->user->name }} {{ $post->user->last_name }}
+                </div>
+                <div class="time-to-read">
+                    <i class="far fa-clock"></i> {{ $post->time_to_read }} <span class="min">min</span>
+                </div>
+            </div>
 
-        <a href="/blog">Back to home</a>
+            <div class="featured-image-wrapper">
+                <img src="{{ $post->featured_image }}" />
+            </div>
+
+            <div class="content-wrapper">
+                {{ $post->content }}
+            </div>
+
+
+        </div>
+    </section>
+
 
     <small style="display: none">{{ $settings->fb_link }}</small>
 

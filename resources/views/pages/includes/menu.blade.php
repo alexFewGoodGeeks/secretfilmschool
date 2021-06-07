@@ -8,16 +8,19 @@
         <div class="menu-items">
             <ul class="right-menu">
                 <li>
-                    <a class="menu-item" data-to="main" href="#">Home</a>
+                    <a class="menu-item" data-to="main" href="{{ request()->is('blog*') || request()->is('article*') ? "/#main" : "#"}}">Home</a>
                 </li>
                 <li>
-                    <a class="menu-item" data-to="sfs-modules" href="#">Modules</a>
+                    <a class="menu-item" data-to="sfs-modules" href="{{ request()->is('blog*') || request()->is('article*') ? "/#sfs-modules" : "#"}}">Modules</a>
                 </li>
                 <li>
-                    <a class="menu-item" data-to="about-simon" href="#">About</a>
+                    <a class="menu-item" data-to="about-simon" href="{{ request()->is('blog*') || request()->is('article*') ? "/#about" : "#"}}">About</a>
                 </li>
                 <li>
-                    <a class="menu-item" data-to="faq" href="#">FAQ</a>
+                    <a class="menu-item" data-to="faq" href="{{ request()->is('blog*') || request()->is('article*') ? "/#faq" : "#"}}">FAQ</a>
+                </li>
+                <li>
+                    <a class="menu-item"  href="/blog">BLOG</a>
                 </li>
             </ul>
         </div>

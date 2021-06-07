@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-12">
                 <div class="heading-text title-text ">
-                    <h1>DISCOVER HOW TO BE A SUCCESSFUL FILMMAKER</h1>
+                    <h1>DISCOVER HOW TO BE <br>A SUCCESSFUL FILMMAKER</h1>
                     <p class="small-heading">The proven system to take your career all the way.</p>
                 </div>
             </div>

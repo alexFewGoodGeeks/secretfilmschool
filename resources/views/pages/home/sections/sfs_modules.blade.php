@@ -5,10 +5,10 @@
             <li class="nav-item col-md-4">
                 <a class="active nav-link module-one module-nav-item" data-toggle="tab" href="#home">
                     <span class="module-nav-title">Module One</span>
-                    <span class="module-nav-subtitle">How to build your audience</span>
+                    <span id="scroll-module-title" class="module-nav-subtitle">How to build your audience</span>
                 </a>
             </li>
-            <li class="nav-item col-md-4">
+            <li class="nav-item col-md-4 sfs-module-bg">
                 <a class="nav-link module-two module-nav-item" data-toggle="tab" href="#menu1">
                     <span class="module-nav-title">Module Two</span>
                     <span class="module-nav-subtitle">How to win at film festivals</span>
@@ -27,7 +27,7 @@
         <div class="tab-content">
             <div id="home" class="container tab-pane active module-content"><br>
                 <h3 class="small-heading">MODULE ONE</h3>
-                <h2>HOW TO BUILD YOUR AUDIENCE</h2>
+                <h2 >HOW TO BUILD YOUR AUDIENCE</h2>
                 <p class="regular-text">Knowing how to connect with your audience will determine the impact your film has on the public when its released. This module shows you exactly how to build your audience before your film hits the screen.</p>
             </div>
             <div id="menu1" class="container tab-pane fade module-content"><br>

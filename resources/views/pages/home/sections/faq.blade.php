@@ -2,22 +2,22 @@
     <div class="container faq-content">
         <h2>FAQ</h2>
         <p>
-            <strong>How long does the program take to complete?</strong> The whole course is packaged into less than 5 hours of
+            <strong class="uppercase">How long does the program take to complete?</strong> The whole course is packaged into less than 5 hours of
             video training.
         </p>
         <p>
-            <strong>Will the course give me everything I need to be successful with my film?</strong> Yes. This program gives you all
+            <strong class="uppercase">Will the course give me everything I need to be successful with my film?</strong> Yes. This program gives you all
             the information you require to build an audience, win at film festivals and negotiate the best deal with a film
             distribution company.
         </p>
         <p>
-            <strong>Is the course complicated?</strong> No. Secret Film School is easy to understand and has been completed by directors of all experience types including first time filmmakers.
+            <strong class="uppercase">Is the course complicated?</strong> No. Secret Film School is easy to understand and has been completed by directors of all experience types including first time filmmakers.
         </p>
         <p>
-            <strong>How does the program work?</strong> The course is made up of clearly presented step by step training videos which also includes specific ‘done for you’ / copy and paste sections to make your process as easy as possible.
+            <strong class="uppercase">How does the program work?</strong> The course is made up of clearly presented step by step training videos which also includes specific ‘done for you’ / copy and paste sections to make your process as easy as possible.
         </p>
         <p>
-            <strong>Is Secret Film School unique?</strong> The program is 100% the original creation of filmmaker Simon Sharman and the training inside cannot be found anywhere else in the industry.
+            <strong class="uppercase">Is Secret Film School unique?</strong> The program is 100% the original creation of filmmaker Simon Sharman and the training inside cannot be found anywhere else in the industry.
         </p>
 
         <h2 class="faq-title">THERE’S A REASON YOU’RE HERE...</h2>

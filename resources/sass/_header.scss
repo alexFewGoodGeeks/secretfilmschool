@@ -55,15 +55,28 @@ header {
             position: absolute;
             object-fit: cover;
             width: 160%;
-            height: 72%;
+            height: 60%;
         }
 
         @media(max-width: 425px) {
-            height: 82%;
+            height: 62%;
         }
 
-        @media(max-width: 376px) {
-            height: 82%;
+        @media(max-width: 414px) {
+            height: 68%;
+        }
+
+        @media(max-width: 375px) {
+            height: 78%;
+        }
+
+        @media(max-width: 375px) and (min-height: 800px) {
+            height: 61%;
+        }
+
+
+        @media(max-width: 320px) {
+            height: 88%;
         }
 
         //max-height: 90vh;
@@ -74,9 +87,19 @@ header {
 .heading-text-wrapper {
     position: absolute;
     top: 35%;
+
     @media(max-width: 1024px) {
         top: 25%;
     }
+
+    @media(max-width: 768px) and (min-height: 1024px) {
+        top: 20%;
+    }
+
+    @media(max-width: 1024px) and (min-height: 1336px) {
+        top: 20%;
+    }
+
     left: 0;
     right: 0;
     margin: auto;

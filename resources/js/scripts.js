@@ -30,10 +30,9 @@ jQuery(function() {
     });
 
     $("#modules-nav li.nav-item").click(function() {
-        var scrollTo = "sfs-modules";
 
         $([document.documentElement, document.body]).animate({
-            scrollTop: $("#" + scrollTo).offset().top
+            scrollTop: $("#modules-nav").offset().top+100
         }, 500);
     })
 
