@@ -4,13 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>SecretFilmSchool</title>
+    <title>Secret Film School</title>
 
     @include('pages.includes.seo_header')
 
     <link rel="canonical" href="">
     <!-- Bootstrap core CSS -->
     <title>{{ config('app.name', 'SecretFilmSchool') }}</title>
+
+    <link rel="shortcut icon" type="image/png" href="{{ asset('images/fav.png') }}"/>
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">

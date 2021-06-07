@@ -11,27 +11,27 @@ class HomePageSeoRepository extends AbstractSeoRepository
 
     public function getPageDescription()
     {
-        return "Main Homepage description";
+        return "The proven system to take your career all the way.";
     }
 
     public function getCanonicalUrl()
     {
-        return "https://secretfilmschool.com";
+        return url()->current();
     }
 
     public function getOgType()
     {
-        // TODO: Implement getOgType() method.
+       return 'page';
     }
 
     public function getOgTitle()
     {
-        // TODO: Implement getOgTitle() method.
+        return 'DISCOVER HOW TO BE A SUCCESSFUL FILMMAKER';
     }
 
     public function getOgDescription()
     {
-        // TODO: Implement getOgDescription() method.
+        return 'The proven system to take your career all the way.';
     }
 
     public function getOgImage()
@@ -46,7 +46,7 @@ class HomePageSeoRepository extends AbstractSeoRepository
 
     public function getOgSiteName()
     {
-        // TODO: Implement getOgSiteName() method.
+        return 'Secret Film School';
     }
 
     public function getPageKeywords()
