@@ -10210,8 +10210,10 @@ h1, h2, h3 {
   background-color: #D1D2D4;
   padding: 4rem 0;
 }
-.featured-section-wrapper .featured-section {
-  padding: 0 6rem;
+@media (min-width: 1024px) {
+  .featured-section-wrapper .featured-section {
+    padding: 0 6rem;
+  }
 }
 .featured-section-wrapper .featured-section .featured-section-logos {
   justify-content: space-between !important;
@@ -10225,6 +10227,7 @@ h1, h2, h3 {
 @media (max-width: 768px) {
   .featured-section-wrapper p {
     text-align: center;
+    font-size: 1rem;
   }
 }
 @media (max-width: 1200px) {
