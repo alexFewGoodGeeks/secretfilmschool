@@ -19,6 +19,9 @@
                 <div class="time-to-read">
                     <i class="far fa-clock"></i> {{ $post->time_to_read }} <span class="min">min</span>
                 </div>
+                <div class="date-published">
+                    <i class="far fa-calendar"></i> {{ $post->created_at->diffForHumans() }}
+                </div>
             </div>
 
             <div class="featured-image-wrapper">

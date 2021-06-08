@@ -141,6 +141,7 @@ h1, h2, h3 {
         .sbs-video {
             img, video {
                 width: 100%;
+                display: flex;
             }
         }
     }

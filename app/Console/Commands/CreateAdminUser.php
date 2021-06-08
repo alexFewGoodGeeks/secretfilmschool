@@ -48,6 +48,13 @@ class CreateAdminUser extends Command
             'password' => \Hash::make('makedonija')
         ]);
 
+        $this->userRepository->create([
+            'name' => 'Simon',
+            'last_name' => 'Sharman',
+            'email' => 'si@secretfilmschool.com',
+            'password' => \Hash::make('s3cr3tp45w04d')
+        ]);
+
         $this->info('Admin user was created!');
         return 0;
     }

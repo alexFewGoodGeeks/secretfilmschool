@@ -10366,6 +10366,7 @@ h1, h2, h3 {
 }
 .step-by-step-video-wrapper .sbs-content .sbs-video img, .step-by-step-video-wrapper .sbs-content .sbs-video video {
   width: 100%;
+  display: flex;
 }
 
 .inside-sfs-wrapper {
@@ -10858,6 +10859,11 @@ h1, h2, h3 {
   color: #ffffff;
   font-size: 3rem;
 }
+@media (max-width: 560px) {
+  .blog-heading h1 {
+    font-size: 2.2rem;
+  }
+}
 
 .module {
   position: relative;
@@ -10936,19 +10942,36 @@ h1, h2, h3 {
   justify-content: center;
 }
 .article-wrapper .title-wrapper h2 {
+  text-align: center;
   font-size: 3rem;
   color: #000000;
+}
+@media (max-width: 560px) {
+  .article-wrapper .title-wrapper h2 {
+    font-size: 1.8rem;
+  }
 }
 .article-wrapper .details-wrapper {
   display: flex;
   justify-content: center;
 }
-.article-wrapper .details-wrapper .author, .article-wrapper .details-wrapper .time-to-read {
+@media (max-width: 520px) {
+  .article-wrapper .details-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+.article-wrapper .details-wrapper .author, .article-wrapper .details-wrapper .time-to-read, .article-wrapper .details-wrapper .date-published {
   padding: 0 1rem;
 }
 .article-wrapper .featured-image-wrapper {
   text-align: center;
   padding: 2rem;
+}
+.article-wrapper .featured-image-wrapper img {
+  width: 100%;
 }
 .article-wrapper .content-wrapper {
   font-size: 1.2rem;
