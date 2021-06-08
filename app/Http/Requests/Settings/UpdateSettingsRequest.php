@@ -31,7 +31,7 @@ class UpdateSettingsRequest extends FormRequest
             'free_webinar_snippet' => 'required',
             'fb_link' => 'string',
             'yt_link' => 'string',
-            'tw_link' => 'string',
+            'tt_link' => 'string',
             'ig_link' => 'nullable'
         ];
     }

@@ -46,4 +46,9 @@ jQuery(function() {
             $("#closeMenu").click();
         }
     });
+
+    if ($( window ).width() < 768) {
+        var minHeight = $(".bg-image-full").height();
+        $(".video-heading video").css('height', minHeight);
+    }
 })

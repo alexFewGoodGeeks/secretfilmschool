@@ -6,7 +6,7 @@
                     <img src="{{ asset('images/testimonial_1.png') }}" alt="" title="" />
                 </div>
                 <div class="testimonial-content">
-                    <p class="testimonial-text">This course is groundbreaking. All aspring filmmakers need this!                         </p>
+                    <p class="testimonial-text">This course is groundbreaking. All aspiring filmmakers need this!                         </p>
                     <p class="testimonial-author">Charles Parish</p>
                     <p class="testimonial-author">Director</p>
                 </div>

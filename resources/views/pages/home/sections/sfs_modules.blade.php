@@ -38,7 +38,7 @@
             <div id="menu2" class="container tab-pane fade module-content"><br>
                 <h3 class="small-heading">MODULE THREE</h3>
                 <h2>HOW TO FIND DISTRIBUTION</h2>
-                <p class="regular-text">Overcoming the challenge of selling a film is often the most feared and misunderstood aspect faced by all filmmakers. This modules gives you all the answers and provides a ‘copy and paste’ approach which can be used to sell any film.</p>
+                <p class="regular-text">Overcoming the challenge of selling a film is often the most feared and misunderstood aspect faced by all filmmakers. This module gives you all the answers and provides a ‘copy and paste’ approach which can be used to sell any film.</p>
             </div>
         </div>
     </div>
@@ -82,7 +82,7 @@
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                     <div class="card-body">
-                        <p class="regular-text">Overcoming the challenge of selling a film is often the most feared and misunderstood aspect faced by all filmmakers. This modules gives you all the answers and provides a ‘copy and paste’ approach which can be used to sell any film.</p>
+                        <p class="regular-text">Overcoming the challenge of selling a film is often the most feared and misunderstood aspect faced by all filmmakers. This module gives you all the answers and provides a ‘copy and paste’ approach which can be used to sell any film.</p>
                     </div>
                 </div>
             </div>

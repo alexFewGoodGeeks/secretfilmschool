@@ -8,10 +8,10 @@
                 </a>
             </li>
             @endif
-            @if (!empty($settings->tw_link))
+            @if (!empty($settings->tt_link))
             <li class="social-media-item">
-                <a href="{{ $settings->tw_link }}" target="_blank" class="social-media-icon tw-icon">
-                    <img class="social-media-icon"  src="{{ asset('images/tw_icon.png') }}" alt="twitter" title="twitter" />
+                <a href="{{ $settings->tt_link }}" target="_blank" class="social-media-icon tt-icon">
+                    <img class="social-media-icon"  src="{{ asset('images/tt_icon.png') }}" alt="tiktok" title="tiktok" />
                 </a>
             </li>
             @endif

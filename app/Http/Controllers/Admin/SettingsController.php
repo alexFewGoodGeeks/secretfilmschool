@@ -48,7 +48,7 @@ class SettingsController extends Controller
 
         $this->settingsRepository->fb_link = $request->fb_link;
         $this->settingsRepository->yt_link = $request->yt_link;
-        $this->settingsRepository->tw_link = $request->tw_link;
+        $this->settingsRepository->tt_link = $request->tt_link;
         $this->settingsRepository->ig_link = $request->ig_link;
 
 

@@ -15,7 +15,9 @@ h1, h2, h3 {
             padding: 0 6rem;
         }
         .featured-section-logos {
-            justify-content: space-between !important;
+            @media(min-width: 1200px) {
+                justify-content: space-between !important;
+            }
         }
     }
     p {
@@ -30,15 +32,27 @@ h1, h2, h3 {
     }
     @media(max-width: 1200px) {
         .featured-section-logos {
-            flex-direction: column;
+
             align-items: center;
+            flex-wrap: wrap;
+
         }
     }
+
+    @media(max-width: 560px) {
+        .featured-section-logos {
+            flex-direction: column;
+        }
+    }
+
     .featured-logo {
         padding: 0.8rem;
         img {
            // width: 100%;
             height: 40px;
+            @media(max-width: 560px) {
+                height: 30px;
+            }
             opacity: 0.5;
         }
     }
@@ -238,10 +252,6 @@ h1, h2, h3 {
         position: relative;
     }
 
-    .sfs-module-bg::before {
-        background-color: red;
-    }
-
     background-color: $sfs_modules_wrapper_background;
     #modules-nav .nav-item .active .module-nav-subtitle {
         display: none;
@@ -289,12 +299,12 @@ h1, h2, h3 {
                 }
                 &:hover {
                     .module-nav-subtitle, .module-nav-title {
-                        color: #8BB9CE;
+                        color: $white;
                     }
                 }
                 .module-nav-title {
                     font-family: $montserratFontFamily;
-                    color: $white;
+                    color: #8BB9CE;
                     font-size: 2rem;
                     @media(max-width: 1024px) {
                         font-size: 1.5rem;
@@ -305,7 +315,7 @@ h1, h2, h3 {
                 }
                 .module-nav-subtitle {
                     font-family: $helveticaNeue;
-                    color: $white;
+                    color: #8BB9CE;
                     font-size: 4rem;
                     @media(max-width: 1024px) {
                         font-size: 3rem;
@@ -359,7 +369,15 @@ h1, h2, h3 {
             }
         }
     }
-
+    .load-images-1 {
+        background: url(/images/module_one_nav.jpg);
+    }
+    .load-images-2 {
+        background: url(/images/module_two_nav.jpg);
+    }
+    .load-images-3 {
+        background: url(/images/module_three_nav.jpg);
+    }
     .modules-m {
         display: none;
     }

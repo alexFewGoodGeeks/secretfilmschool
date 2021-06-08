@@ -107,12 +107,18 @@ header {
         padding: 0;
         &.title-text {
             h1 {
+                @media(min-width: 1440px) {
+                    font-size: 4rem;
+                }
                 font-size: 3rem;
                 @media(max-width: 768px) {
                     font-size: 1.8rem;
                 }
             }
             p {
+                @media(min-width: 1440px) {
+                    font-size: 1.8rem;
+                }
                 font-size: 1.25rem;
                 @media(max-width: 768px) {
                     font-size: 1rem;

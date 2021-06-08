@@ -14,7 +14,7 @@ class SettingsRepository extends Settings
     public $fb_link;
     public $ig_link;
     public $yt_link;
-    public $tw_link;
+    public $tt_link;
 
     public static function group(): string
     {

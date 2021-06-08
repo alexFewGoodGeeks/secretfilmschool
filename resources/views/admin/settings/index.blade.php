@@ -111,10 +111,10 @@
                     </div>
 
                     <div class="form-group row m-b-15">
-                        <label class="col-form-label col-md-3">@lang('messages.tw_link')</label>
+                        <label class="col-form-label col-md-3">@lang('messages.tt_link')</label>
                         <div class="col-md-9">
-                            {{ Form::text('tw_link', $settings->tw_link, ['class' => 'form-control']) }}
-                            @error('tw_link')
+                            {{ Form::text('tt_link', $settings->tw_link, ['class' => 'form-control']) }}
+                            @error('tt_link')
                             <small class="f-s-12 text-grey-darker">{{ $message }}</small>
                             @endif
                         </div>

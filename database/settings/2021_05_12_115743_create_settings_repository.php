@@ -15,7 +15,7 @@ class CreateSettingsRepository extends SettingsMigration
 
         $this->migrator->add('general.fb_link', 'https://facebook.com');
         $this->migrator->add('general.yt_link', 'https://youtube.com/');
-        $this->migrator->add('general.tw_link', 'https://twitter.com/');
+        $this->migrator->add('general.tt_link', 'https://tiktok.com/');
         $this->migrator->add('general.ig_link', 'https://insagram.com/');
     }
 }
