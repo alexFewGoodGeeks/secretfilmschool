@@ -23,3 +23,6 @@
         </div>
     </div>
 </section>
+<div id="logos-after-wrapper">
+
+</div>

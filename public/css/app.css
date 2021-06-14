@@ -10217,7 +10217,7 @@ h1, h2, h3 {
 }
 
 .featured-section-wrapper {
-  background-color: #D1D2D4;
+  background-color: #ffffff;
   padding: 4rem 0;
 }
 @media (min-width: 1024px) {
@@ -10266,8 +10266,14 @@ h1, h2, h3 {
   }
 }
 
+#logos-after-wrapper {
+  width: 100%;
+  height: 4rem;
+  background-color: #000000;
+}
+
 .header-headline-wrapper {
-  background-color: #0D0C0D;
+  background-color: #000000;
   padding: 3rem 0;
   margin-top: -10px;
 }
@@ -10332,6 +10338,7 @@ h1, h2, h3 {
 }
 
 .step-by-step-video-wrapper {
+  padding-bottom: 4rem;
   background-color: #000;
 }
 @media (max-width: 768px) {
@@ -10612,7 +10619,7 @@ h1, h2, h3 {
 
 .about-simon-wrapper {
   background-color: #353B40;
-  padding: 4rem 0;
+  padding: 0 0 4rem 0;
 }
 @media (max-width: 540px) {
   .about-simon-wrapper {
@@ -10621,6 +10628,10 @@ h1, h2, h3 {
 }
 .about-simon-wrapper .one-to-one-wrapper {
   display: flex;
+  padding-bottom: 4rem;
+}
+.about-simon-wrapper .one-to-one-wrapper .one-to-one-content {
+  padding-top: 3rem;
 }
 @media (max-width: 425px) {
   .about-simon-wrapper .one-to-one-wrapper .sfs-btn {
@@ -10644,7 +10655,7 @@ h1, h2, h3 {
   }
 }
 .about-simon-wrapper .one-to-one-wrapper .one-to-one-image img {
-  margin-top: -3rem;
+  margin-top: -2px;
   width: 650px;
 }
 @media (max-width: 1200px) {
