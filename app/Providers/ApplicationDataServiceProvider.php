@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Providers;
+use App\Repositories\SettingsRepository;
 use Illuminate\Pagination\Paginator;
 
 
@@ -32,6 +33,12 @@ class ApplicationDataServiceProvider extends ServiceProvider
             $userRepo = app(UserInterface::class);
 
             $view->with('currentUser', $userRepo->currentUser());
+        });
+
+        view()->composer(["*"], function($view) {
+            $settings = app(SettingsRepository::class);
+
+            $view->with('settings', $settings);
         });
     }
 }

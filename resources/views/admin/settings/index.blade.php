@@ -113,7 +113,7 @@
                     <div class="form-group row m-b-15">
                         <label class="col-form-label col-md-3">@lang('messages.tt_link')</label>
                         <div class="col-md-9">
-                            {{ Form::text('tt_link', $settings->tw_link, ['class' => 'form-control']) }}
+                            {{ Form::text('tt_link', $settings->tt_link, ['class' => 'form-control']) }}
                             @error('tt_link')
                             <small class="f-s-12 text-grey-darker">{{ $message }}</small>
                             @endif
