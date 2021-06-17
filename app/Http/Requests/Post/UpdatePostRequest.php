@@ -28,7 +28,7 @@ class UpdatePostRequest extends FormRequest
             'content' => 'required',
             'status' => 'required',
             'time_to_read' => 'required|numeric',
-            'featured_image' => 'sometimes|image|dimensions:min_width=100,min_height=100,max_width=900,max_height=900',
+            'featured_image' => 'sometimes|image|dimensions:min_width=100,min_height=100',
              'seo_keywords' => 'sometimes'
         ];
     }
