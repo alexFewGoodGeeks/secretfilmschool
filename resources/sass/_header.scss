@@ -88,6 +88,18 @@ header {
     position: absolute;
     top: 35%;
 
+    .webinar-button {
+        display: flex;
+        margin-top: 1rem;
+        float: left;
+        @media(max-width: 425px) {
+            .sfs-btn {
+                padding: 0.5rem 0.9rem;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
     @media(max-width: 1024px) {
         top: 25%;
     }

@@ -17,7 +17,8 @@ class BlogController extends Controller
 
     public function index()
     {
-        $posts = Post::orderBy('id')
+        $posts = Post::orderByDesc('id')
+            ->whereStatus('active')
             ->paginate(4);
 
         return view('blog.index')

@@ -10107,6 +10107,17 @@ header {
   right: 0;
   margin: auto;
 }
+.heading-text-wrapper .webinar-button {
+  display: flex;
+  margin-top: 1rem;
+  float: left;
+}
+@media (max-width: 425px) {
+  .heading-text-wrapper .webinar-button .sfs-btn {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.8rem;
+  }
+}
 @media (max-width: 1024px) {
   .heading-text-wrapper {
     top: 25%;

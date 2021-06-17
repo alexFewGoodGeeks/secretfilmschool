@@ -29,7 +29,7 @@
             </div>
 
             <div class="content-wrapper">
-                {{ $post->content }}
+                {!! $post->content !!}
             </div>
 
 

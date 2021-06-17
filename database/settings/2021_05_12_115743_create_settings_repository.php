@@ -13,9 +13,9 @@ class CreateSettingsRepository extends SettingsMigration
         $this->migrator->add('general.inside_sfs_link', 'https://secretfilmschool.com');
         $this->migrator->add('general.free_scholarship_link', 'https://secretfilmschool.com');
 
-        $this->migrator->add('general.fb_link', 'https://facebook.com');
-        $this->migrator->add('general.yt_link', 'https://youtube.com/');
-        $this->migrator->add('general.tt_link', 'https://tiktok.com/');
-        $this->migrator->add('general.ig_link', 'https://insagram.com/');
+        $this->migrator->add('general.fb_link', 'https://www.facebook.com/secretfilmschool/ ');
+        $this->migrator->add('general.yt_link', '');
+        $this->migrator->add('general.tt_link', 'https://tiktok.com/secretfilmschool/');
+        $this->migrator->add('general.ig_link', 'https://www.instagram.com/secretfilmschool/');
     }
 }

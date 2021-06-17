@@ -30,7 +30,7 @@
                                 </div>
                             </div>
                             <div class="content-intro">
-                                {{ $post->content_intro }}
+                                {!! $post->content_intro !!}
                             </div>
                             <div class="read-more-section">
                                 <a href="/article/{{ $post->slug }}" class="sfs-btn-yellow sfs-btn">Read more</a>
