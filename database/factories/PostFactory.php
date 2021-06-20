@@ -28,7 +28,7 @@ class PostFactory extends Factory
             'user_id' => 1,
             'post_category_id' => 1,
             'time_to_read' => rand(1, 5),
-            'status' => 'active'
+            'status' => 'inactive'
         ];
     }
 }
