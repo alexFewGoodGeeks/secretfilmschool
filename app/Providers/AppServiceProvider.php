@@ -15,7 +15,15 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+
+        $url = request()->url();
+        if (strpos($url, "secretfilmschool.com") != -1 ) { 
+            $this->app->bind('path.public', function() {
+                return base_path().'/public_http';
+            });
+        }
+
+
     }
 
     /**
