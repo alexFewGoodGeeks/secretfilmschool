@@ -19,7 +19,7 @@
             <div class="sbs-video">
                 <img src="{{ asset('images/sbs-video.jpeg') }}"  class="promo-image"/>
                 <video loop controls="controls" id="promoVideo" class="promo-video d-none">
-                    <source src="{{ asset('images/main-video.mp4') }}" type="video/ogg">
+                    <source src="{{ asset('images/main_video.mp4') }}" type="video/ogg">
                 </video>
             </div>
         </div>

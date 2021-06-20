@@ -17,7 +17,7 @@ class AppServiceProvider extends ServiceProvider
     {
 
         $url = request()->url();
-        if (strpos($url, "secretfilmschool.com") != -1 ) { 
+        if (strpos($url, "secretfilmschool.com") != -1 ) {
             $this->app->bind('path.public', function() {
                 return base_path().'/public_http';
             });
