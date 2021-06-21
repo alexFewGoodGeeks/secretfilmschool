@@ -29,9 +29,9 @@ class UpdateSettingsRequest extends FormRequest
             'inside_sfs_link' => 'required',
             'free_scholarship_link' => 'required',
             'free_webinar_snippet' => 'required',
-            'fb_link' => 'string',
-            'yt_link' => 'string',
-            'tt_link' => 'string',
+            'fb_link' => 'nullable',
+            'yt_link' => 'nullable',
+            'tt_link' => 'nullable',
             'ig_link' => 'nullable'
         ];
     }

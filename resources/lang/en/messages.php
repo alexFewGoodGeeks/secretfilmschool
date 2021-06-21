@@ -30,5 +30,6 @@ return [
     'fb_link' => 'Facebook link',
     'yt_link' => 'Youtube link',
     'tw_link' => 'Twitter link',
-    'ig_link' => 'Instagram link'
+    'ig_link' => 'Instagram link',
+    'tt_link' => 'TikTok link'
 ];
