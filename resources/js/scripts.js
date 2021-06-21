@@ -1,6 +1,13 @@
 jQuery(function() {
 
     var videoPlayer = document.getElementById('promoVideo');
+
+    document.addEventListener('touchstart', function () {
+        document.getElementById('promoVideo').play();
+        document.getElementById('promoVideo').pause();
+
+    });
+
     videoPlayer.play();
     videoPlayer.pause();
 
