@@ -1,6 +1,8 @@
 jQuery(function() {
 
     var videoPlayer = document.getElementById('promoVideo');
+    videoPlayer.play();
+    videoPlayer.pause();
 
     $(".promo-image").click(function() {
         $(".promo-image").addClass("d-none")
