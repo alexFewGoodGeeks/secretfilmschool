@@ -1,7 +1,7 @@
 <section id="featured-section" class="featured-section-wrapper">
     <div class=" featured-section">
         <p class="d-flex justify-content-center small-heading">Simon’s work has featured here: </p>
-        <div class="featured-section-logos d-flex justify-content-center">
+        <div class="featured-section-logos d-flex ">
             <div class="featured-logo logo">
                 <img src="{{ asset('images/amazon_logo.png') }}" alt="Amazon logo" title="Amazon logo" />
             </div>
