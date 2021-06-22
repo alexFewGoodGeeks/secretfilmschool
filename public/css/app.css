@@ -10948,6 +10948,9 @@ h1, h2, h3 {
   font-size: 1rem;
   line-height: 1.5;
 }
+.blog-container .post-wrapper .post-content-wrapper .content-intro p {
+  font-size: 1rem !important;
+}
 .blog-container .post-wrapper .post-content-wrapper .read-more-section {
   margin-top: 4rem !important;
 }

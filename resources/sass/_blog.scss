@@ -70,6 +70,9 @@
                 font-family: $openSansFontFamily;
                 font-size: 1rem;
                 line-height: 1.5;
+                p {
+                    font-size: 1rem !important;
+                }
             }
             .read-more-section {
 
