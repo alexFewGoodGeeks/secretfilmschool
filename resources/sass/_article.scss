@@ -40,5 +40,8 @@
         font-size: 1.2rem;
         font-family: $openSansFontFamily;
         line-height: 1.5;
+        p {
+            font-size: 1.2rem !important;
+        }
     }
 }
