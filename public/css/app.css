@@ -10904,6 +10904,7 @@ h1, h2, h3 {
   background-image: url(/images/blog_heading.png);
   filter: brightness(40%);
   background-size: cover;
+  background-position: center;
 }
 
 .module-inside {
