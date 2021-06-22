@@ -13,7 +13,7 @@ trait UploadTrait
         $folder = '/uploads/images/';
 
         $disk = 'public';
-
+        $name .= "." . $uploadedFile->clientExtension();
         $uploadedFile->storeAs($folder, $name, $disk);
 
         return $folder . $name;
