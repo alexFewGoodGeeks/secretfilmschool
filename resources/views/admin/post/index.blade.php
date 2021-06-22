@@ -42,7 +42,7 @@
                         <td>@include('admin.post.status')</td>
                         <td>{{ $post->created_at->diffForHumans() }}</td>
                         <td>
-                            <a href="" title="Preview">
+                            <a href="/article/{{$post->slug}}" target="_blank" title="Preview">
                                 <i class="fas fa-lg fa-fw m-r-5 fa-external-link-square-alt"></i>
                             </a>
                             <a href="{{ route('admin.posts.edit', $post->id) }}" title="Edit">
