@@ -8,9 +8,10 @@ jQuery(function() {
 
     });
 
-    videoPlayer.play();
-    videoPlayer.pause();
-
+    if (videoPlayer) {
+        videoPlayer.play();
+        videoPlayer.pause();
+    }
     $(".promo-image").click(function() {
         $(".promo-image").addClass("d-none")
         $(".promo-video").removeClass("d-none");

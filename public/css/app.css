@@ -10998,6 +10998,9 @@ h1, h2, h3 {
 }
 .article-wrapper .featured-image-wrapper img {
   width: 100%;
+  max-height: 550px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .article-wrapper .content-wrapper {
   font-size: 1.2rem;
