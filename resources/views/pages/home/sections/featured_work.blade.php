@@ -23,6 +23,5 @@
         </div>
     </div>
 </section>
-<div id="logos-after-wrapper">
-
-</div>
+{{--<div id="logos-after-wrapper">--}}
+{{--</div>--}}
