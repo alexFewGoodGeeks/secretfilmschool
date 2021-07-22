@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-12 testimonial-item d-flex">
                 <div class="testimonial-avatar">
-                    <img src="{{ asset('images/testimonial_1.png') }}" alt="" title="" />
+                    <img class="lazy" data-src="{{ asset('images/testimonial_1.png') }}" alt="" title="" />
                 </div>
                 <div class="testimonial-content">
                     <p class="testimonial-text">This course is groundbreaking. All aspiring filmmakers need this!                         </p>
@@ -13,7 +13,7 @@
             </div>
             <div class="col-lg-6 col-md-12 testimonial-item d-flex">
                 <div class="testimonial-avatar">
-                    <img src="{{ asset('images/testimonial_2.png') }}" alt="" title="" />
+                    <img class="lazy" data-src="{{ asset('images/testimonial_2.png') }}" alt="" title="" />
                 </div>
                 <div class="testimonial-content">
                     <p class="testimonial-text">Within the first module I grew my audience by 8000%!                        </p>

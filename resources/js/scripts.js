@@ -1,5 +1,8 @@
 jQuery(function() {
 
+    $(".sfs-cover-image").hide();
+    $(".sfs-cover-video").removeClass("hidden");
+
     var videoPlayer = document.getElementById('promoVideo');
 
     document.addEventListener('touchstart', function () {
@@ -7,7 +10,7 @@ jQuery(function() {
         document.getElementById('promoVideo').pause();
 
     });
-
+    
     if (videoPlayer) {
         videoPlayer.play();
         videoPlayer.pause();
@@ -65,5 +68,10 @@ jQuery(function() {
             $(".video-heading video").css('height', '100%');
         }
     })
+
+
+    var lazyLoadInstance = new LazyLoad({
+        // Your custom settings go here
+    });
 
 })
