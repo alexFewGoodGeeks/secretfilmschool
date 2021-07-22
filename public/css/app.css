@@ -10045,6 +10045,29 @@ header {
   margin-top: -8rem;
 }
 
+.video-heading video.hidden {
+  display: none;
+}
+.video-heading .sfs-cover-image {
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  min-height: 500px;
+}
+@media (min-width: 1440px) {
+  .video-heading .sfs-cover-image {
+    margin-top: -14rem;
+  }
+}
+@media (max-width: 510px) {
+  .video-heading .sfs-cover-image {
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 160%;
+    height: 67%;
+  }
+}
 @media (max-width: 540px) {
   .video-heading {
     min-height: 440px;

@@ -1,6 +1,7 @@
 <header class="bg-image-full">
     <div class="video-heading">
-        <video autoplay muted loop >
+        <img class="sfs-cover-image" src="{{ asset('/images/sfs_cover_image.jpeg') }}" />
+        <video autoplay muted loop class="sfs-cover-video hidden">
             <source src="{{ asset('images/homepage.mp4') }}" type="video/mp4">
         </video>
     </div>

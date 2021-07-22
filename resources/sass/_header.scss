@@ -37,6 +37,26 @@ header {
     margin-top: -8rem;
 }
 .video-heading {
+    video.hidden {
+        display: none;
+    }
+    .sfs-cover-image {
+        max-width: 100%;
+        min-width: 100%;
+        width: 100%;
+        min-height: 500px;
+        @media (min-width: 1440px) {
+            margin-top: -14rem;
+        }
+        @media(max-width: 510px) {
+            position: absolute;
+            object-fit: cover;
+            width: 160%;
+            height: 67%;
+        }
+
+
+    }
     @media(max-width: 540px) {
         min-height: 440px;
     }

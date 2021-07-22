@@ -1,5 +1,8 @@
 jQuery(function() {
 
+    $(".sfs-cover-image").hide();
+    $(".sfs-cover-video").removeClass("hidden");
+    
     var videoPlayer = document.getElementById('promoVideo');
 
     document.addEventListener('touchstart', function () {
