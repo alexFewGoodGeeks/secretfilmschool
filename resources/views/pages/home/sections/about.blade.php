@@ -14,12 +14,12 @@
                 </p>
             </div>
             <div class="one-to-one-image">
-                <img src="{{ asset('images/1on1coaching.png') }}">
+                <img class="lazy" data-src="{{ asset('images/1on1coaching.png') }}">
             </div>
         </div>
         <div class="about-simon-wrapper d-flex">
             <div class="about-image">
-                <img src="{{ asset('images/about_simon.jpg') }}" title="Simon Sharman" alt="Simon Sharman"/>
+                <img class="lazy" data-src="{{ asset('images/about_simon.jpg') }}" title="Simon Sharman" alt="Simon Sharman"/>
             </div>
             <div class="about-content">
                 <h2>ABOUT SIMON</h2>
