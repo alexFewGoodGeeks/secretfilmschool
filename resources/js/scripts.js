@@ -11,14 +11,10 @@ jQuery(function() {
 
     });
 
-    setTimeout(function(){
-
-        if (videoPlayer) {
-            videoPlayer.play();
-            //videoPlayer.pause();
-        }
-    }, 3000);
-
+    // if (videoPlayer) {
+    //     videoPlayer.play();
+    //     videoPlayer.pause();
+    // }
     $(".promo-image").click(function() {
         $(".promo-image").addClass("d-none")
         $(".promo-video").removeClass("d-none");

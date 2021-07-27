@@ -24,6 +24,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <meta name="facebook-domain-verification" content="8fslmxhro29jrdiikh462jd2sy4we6" />
+    <meta name="p:domain_verify" content="2129aafdf4a3769ce988ebfcf17448a1"/>
 
 </head>
 <body>
