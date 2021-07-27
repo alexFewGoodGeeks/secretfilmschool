@@ -23,6 +23,8 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
+    <meta name="facebook-domain-verification" content="8fslmxhro29jrdiikh462jd2sy4we6" />
+
 </head>
 <body>
 

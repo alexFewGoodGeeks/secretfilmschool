@@ -10,11 +10,15 @@ jQuery(function() {
         document.getElementById('promoVideo').pause();
 
     });
-    
-    if (videoPlayer) {
-        videoPlayer.play();
-        videoPlayer.pause();
-    }
+
+    setTimeout(function(){
+
+        if (videoPlayer) {
+            videoPlayer.play();
+            //videoPlayer.pause();
+        }
+    }, 3000);
+
     $(".promo-image").click(function() {
         $(".promo-image").addClass("d-none")
         $(".promo-video").removeClass("d-none");

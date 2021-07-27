@@ -18,7 +18,7 @@
 {{--            </div>--}}
             <div class="sbs-video">
                 <img class="lazy" data-src="{{ asset('images/sbs-video.png') }}"  class="promo-image"/>
-                <video loop controls="controls" id="promoVideo" class="promo-video d-none">
+                <video muted loop controls="controls" id="promoVideo" class="promo-video d-none">
                     <source src="{{ asset('images/main_video.mp4') }}" type="video/mp4">
                 </video>
             </div>
