@@ -69,3 +69,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('blog', [\App\Http\Controllers\BlogController::class, 'index'])->name('blog.home');
 Route::get('article/{slug}', [\App\Http\Controllers\BlogController::class, 'article'])->name('blog.article');
+
+/**
+ * GDPR page
+ */
+Route::get('gdpr', [\App\Http\Controllers\Pages\GdprPageController::class, 'index'])->name('gdpr.index');

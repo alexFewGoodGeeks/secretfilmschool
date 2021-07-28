@@ -33,6 +33,9 @@
 
     <div class="main" id="main">
         @yield('content')
+
+        @include('cookieConsent::index')
+
     </div>
 
 <!-- Scripts -->

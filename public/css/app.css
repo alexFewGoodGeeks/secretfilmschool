@@ -11037,3 +11037,45 @@ h1, h2, h3 {
 .article-wrapper .content-wrapper p, .article-wrapper .content-wrapper li {
   font-size: 1.2rem !important;
 }
+
+.cookie-consent .gdpr-wrapper {
+  position: fixed;
+  background-color: #afceed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+@media (max-width: 768px) {
+  .cookie-consent .gdpr-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cookie-consent .gdpr-wrapper .sfs-btn {
+    font-size: 0.8rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+.cookie-consent .gdpr-wrapper .cookie-consent__message {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .cookie-consent .gdpr-wrapper .cookie-consent__message {
+    margin-bottom: 1rem;
+  }
+}
+.cookie-consent .gdpr-wrapper .gdpr-link {
+  color: #000000;
+}
+
+.gdpr-section .small-heading {
+  font-size: 1.2rem;
+}
+.gdpr-section .regular-text {
+  font-size: 1rem;
+}
