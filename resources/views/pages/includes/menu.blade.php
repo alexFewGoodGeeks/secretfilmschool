@@ -22,6 +22,9 @@
                 <li>
                     <a class="menu-item"  href="/blog">BLOG</a>
                 </li>
+                <li>
+                    <a class="menu-item"  href="/privacy-policy">PRIVACY POLICY</a>
+                </li>
             </ul>
         </div>
     </div>

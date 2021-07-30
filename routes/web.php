@@ -73,4 +73,6 @@ Route::get('article/{slug}', [\App\Http\Controllers\BlogController::class, 'arti
 /**
  * GDPR page
  */
+Route::get('privacy-policy', [\App\Http\Controllers\Pages\PrivacyPolicyController::class, 'index'])->name('privacy-policy.index');
 Route::get('gdpr', [\App\Http\Controllers\Pages\GdprPageController::class, 'index'])->name('gdpr.index');
+Route::post('newsletter/subscribe', [\App\Http\Controllers\EmailSubscribeController::class, 'store'])->name('newsletter.store');

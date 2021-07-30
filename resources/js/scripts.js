@@ -1,5 +1,30 @@
 jQuery(function() {
 
+    function setCookie(cname, cvalue, exhours) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exhours * 60 * 60 * 1000));
+        var expires = "expires=" + d.toGMTString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+
+    function getCookie(cName) {
+        var name = cName + "=";
+        var cArray = document.cookie.split(";");
+
+        for (var i = 0; i < cArray.length; i++) {
+            var c = cArray[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+
+
     $(".sfs-cover-image").hide();
     $(".sfs-cover-video").removeClass("hidden");
 
@@ -74,4 +99,68 @@ jQuery(function() {
         // Your custom settings go here
     });
 
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
+
+    // $("html").bind("mouseleave", function () {
+    //     $('#myModal').modal();
+    //     $("html").unbind("mouseleave");
+    // });
+
+    $("#subscribe-btn").click(function() {
+
+        $("#subscribe-error").addClass("d-none");
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        const data = {
+            email: $("#email").val(),
+        }
+        $.ajax({
+            url: "/newsletter/subscribe",
+            type: "post",
+            data: data ,
+            success: function (response) {
+               $("#subscribe-data").hide();
+               $("#subscribe-btn").hide();
+               $("#subscribe-thanks").removeClass("d-none");
+                setCookie("newsletter_popup", 10, 10000);
+                setCookie("poppedUp", 1, 10000);
+            },
+            error: function(err) {
+                $("#subscribe-error").removeClass("d-none");
+
+            }
+        });
+    })
+
+
+    $("html").mouseleave(function(){
+        checkCookie();
+       // $('#exampleModalLong').modal({'show':true});
+    });
+
+
+    function checkCookie() {
+        const popUp = getCookie("poppedUp");
+        const noOfPopups = getCookie("newsletter_popup");
+        const maxShow = 3;
+        if (popUp != "") {} else {
+            $('#exampleModalLong').modal('show');
+            const popUp = 1;
+            setCookie("poppedUp", popUp, 24);
+            setCookie("newsletter_popup", 1, 24);
+        }
+        if (noOfPopups >= 1 && noOfPopups <= maxShow) {
+            setCookie("poppedUp", popUp, 1);
+            setCookie("newsletter_popup", parseInt(noOfPopups)+1, 24);
+            $('#exampleModalLong').modal('show');
+        }
+    }
 })
+
+
