@@ -103,10 +103,6 @@ jQuery(function() {
         $('#myInput').trigger('focus')
     })
 
-    // $("html").bind("mouseleave", function () {
-    //     $('#myModal').modal();
-    //     $("html").unbind("mouseleave");
-    // });
 
     $("#subscribe-btn").click(function() {
 
@@ -144,21 +140,19 @@ jQuery(function() {
        // $('#exampleModalLong').modal({'show':true});
     });
 
+    setTimeout(function(){
+        checkCookie();
+    }, 15000);
+
 
     function checkCookie() {
         const popUp = getCookie("poppedUp");
-        const noOfPopups = getCookie("newsletter_popup");
         const maxShow = 3;
         if (popUp != "") {} else {
             $('#exampleModalLong').modal('show');
             const popUp = 1;
             setCookie("poppedUp", popUp, 24);
             setCookie("newsletter_popup", 1, 24);
-        }
-        if (noOfPopups >= 1 && noOfPopups <= maxShow) {
-            setCookie("poppedUp", popUp, 1);
-            setCookie("newsletter_popup", parseInt(noOfPopups)+1, 24);
-            $('#exampleModalLong').modal('show');
         }
     }
 })
