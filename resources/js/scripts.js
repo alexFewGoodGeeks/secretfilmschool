@@ -74,8 +74,8 @@ jQuery(function() {
     });
 
 
-    var glide = new Glide('.glide', {
-        startAt: 0,
-        perView: 6
-    })
+    // var glide = new Glide('.glide', {
+    //     startAt: 0,
+    //     perView: 6
+    // })
 })
