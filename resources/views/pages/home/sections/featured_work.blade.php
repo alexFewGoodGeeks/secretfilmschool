@@ -2,24 +2,61 @@
     <div class=" featured-section">
         <p class="d-flex justify-content-center small-heading">Simon’s work has featured here: </p>
         <div class="featured-section-logos d-flex ">
-            <div class="featured-logo logo">
-                <img class="lazy" data-src="{{ asset('images/amazon_logo.png') }}" alt="Amazon logo" title="Amazon logo" />
+
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="featured-logo logo">
+                                <img class="lazy" data-src="{{ asset('images/amazon_logo.png') }}" alt="Amazon logo" title="Amazon logo" />
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="featured-logo logo">
+                                <img class="lazy" data-src="{{ asset('images/bbc_logo.png') }}" alt="BBC logo" title="BBC logo" />
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="featured-logo logo">
+                                <img class="lazy" data-src="{{ asset('images/the_guardian_logo.png') }}" alt="The Guardian logo" title="The Guardian logo" />
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="featured-logo logo">
+                                <img class="lazy" data-src="{{ asset('images/rtl_logo.png') }}" alt="RTL logo" title="RTL logo" />
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="featured-logo logo">
+                                <img class="lazy" data-src="{{ asset('images/the_times_logo.png') }}" alt="RTL logo" title="RTL logo" />
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="featured-logo logo">
+                                <img class="lazy" data-src="{{ asset('images/channel9_logo.png') }}" alt="Channel9 logo" title="Channel9 logo" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="featured-logo logo">
-                <img class="lazy" data-src="{{ asset('images/bbc_logo.png') }}" alt="BBC logo" title="BBC logo" />
-            </div>
-            <div class="featured-logo logo">
-                <img class="lazy" data-src="{{ asset('images/the_guardian_logo.png') }}" alt="The Guardian logo" title="The Guardian logo" />
-            </div>
-            <div class="featured-logo logo">
-                <img class="lazy" data-src="{{ asset('images/rtl_logo.png') }}" alt="RTL logo" title="RTL logo" />
-            </div>
-            <div class="featured-logo logo">
-                <img class="lazy" data-src="{{ asset('images/the_times_logo.png') }}" alt="RTL logo" title="RTL logo" />
-            </div>
-            <div class="featured-logo logo">
-                <img class="lazy" data-src="{{ asset('images/channel9_logo.png') }}" alt="Channel9 logo" title="Channel9 logo" />
-            </div>
+{{--            <div class="featured-logo logo">--}}
+{{--                <img class="lazy" data-src="{{ asset('images/amazon_logo.png') }}" alt="Amazon logo" title="Amazon logo" />--}}
+{{--            </div>--}}
+{{--            <div class="featured-logo logo">--}}
+{{--                <img class="lazy" data-src="{{ asset('images/bbc_logo.png') }}" alt="BBC logo" title="BBC logo" />--}}
+{{--            </div>--}}
+{{--            <div class="featured-logo logo">--}}
+{{--                <img class="lazy" data-src="{{ asset('images/the_guardian_logo.png') }}" alt="The Guardian logo" title="The Guardian logo" />--}}
+{{--            </div>--}}
+{{--            <div class="featured-logo logo">--}}
+{{--                <img class="lazy" data-src="{{ asset('images/rtl_logo.png') }}" alt="RTL logo" title="RTL logo" />--}}
+{{--            </div>--}}
+{{--            <div class="featured-logo logo">--}}
+{{--                <img class="lazy" data-src="{{ asset('images/the_times_logo.png') }}" alt="RTL logo" title="RTL logo" />--}}
+{{--            </div>--}}
+{{--            <div class="featured-logo logo">--}}
+{{--                <img class="lazy" data-src="{{ asset('images/channel9_logo.png') }}" alt="Channel9 logo" title="Channel9 logo" />--}}
+{{--            </div>--}}
         </div>
     </div>
 </section>

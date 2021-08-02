@@ -52,7 +52,6 @@ jQuery(function() {
     $(document).mouseup(function(e)
     {
         var container = $("#main-menu");
-
         // if the target of the click isn't the container nor a descendant of the container
         if (!container.is(e.target) && container.has(e.target).length === 0)
         {
@@ -74,4 +73,9 @@ jQuery(function() {
         // Your custom settings go here
     });
 
+
+    var glide = new Glide('.glide', {
+        startAt: 0,
+        perView: 6
+    })
 })
