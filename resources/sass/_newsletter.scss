@@ -71,6 +71,7 @@
                         text-transform: uppercase;
                         font-family: $openSansFontFamily;
                         font-size: 0.9rem;
+                        color: #dad6d7;
                     }
                 }
                 .name-input {
@@ -94,15 +95,17 @@
                     width: 100%;
                     margin: 0.2rem 0;
                 }
+                color: #dad6d7;
                 text-transform: uppercase;
                 font-size: 1rem;
                 font-family: $openSansFontFamily;
                 &.unlock {
                     background-color: #EE220C;
+                    color: #dad6d7;
                 }
                 &.cancel {
                     background-color: $white;
-                    color: #495057;
+                    color: #dad6d7;
                 }
             }
         }

@@ -11157,16 +11157,19 @@ h1, h2, h3 {
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
+  color: #dad6d7;
 }
 .sfs-modal-newsletter .modal-content #subscribe-data .sfs-form-row input:-ms-input-placeholder {
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
+  color: #dad6d7;
 }
 .sfs-modal-newsletter .modal-content #subscribe-data .sfs-form-row input::placeholder {
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
+  color: #dad6d7;
 }
 .sfs-modal-newsletter .modal-content #subscribe-data .sfs-form-row .name-input {
   width: 48%;
@@ -11183,6 +11186,7 @@ h1, h2, h3 {
   margin: 0.5rem 0;
   border-radius: 0px;
   width: 200px;
+  color: #dad6d7;
   text-transform: uppercase;
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
@@ -11195,8 +11199,9 @@ h1, h2, h3 {
 }
 .sfs-modal-newsletter .modal-content .sfs-form-buttons button.unlock {
   background-color: #EE220C;
+  color: #dad6d7;
 }
 .sfs-modal-newsletter .modal-content .sfs-form-buttons button.cancel {
   background-color: #ffffff;
-  color: #495057;
+  color: #dad6d7;
 }
