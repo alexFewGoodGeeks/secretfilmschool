@@ -22,6 +22,8 @@
 
     @include('pages.home.sections.faq')
 
+    @include('pages.home.sections.newsletter')
+
     @include('pages.includes.footer')
 
 @endsection
