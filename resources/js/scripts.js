@@ -146,7 +146,7 @@ jQuery(function() {
         checkCookie();
     }, 15000);
 
-    $('#exampleModalLong').modal('show');
+   
     function checkCookie() {
         const popUp = getCookie("poppedUp");
         if (popUp != "") {} else {
