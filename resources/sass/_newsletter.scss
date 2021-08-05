@@ -1,0 +1,111 @@
+.sfs-modal-newsletter {
+    .modal-content {
+        background-color: #0076FF;
+        border-radius: 0px;
+        border: 1px solid black;
+
+        .modal-header {
+            border-bottom: none;
+        }
+        .modal-body {
+            text-align: center;
+        }
+
+        .sfs-modal-title {
+            h3 {
+                line-height: 0.8;
+                text-transform: uppercase;
+                font-size: 2rem;
+                @media(max-width: 480px) {
+                    font-size: 1.5rem;
+                }
+                font-family: $helveticaNeue;
+            }
+        }
+        #subscribe-thanks {
+            p {
+                margin:0;
+                padding:0;
+                text-transform: uppercase;
+                font-size: 1rem;
+                line-height: 1;
+                font-family: $openSansFontFamily;
+            }
+        }
+        .sfs-modal-subtitle {
+            padding: 2rem 0;
+            max-width: 70%;
+            @media(max-width: 480px) {
+                max-width: 100%;
+            }
+            margin:0 auto;
+            p {
+                margin:0;
+                padding:0;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1rem;
+                @media(max-width: 480px) {
+                    font-size: 0.8rem;
+                }
+                line-height: 1;
+                font-style: italic;
+                font-family: $openSansFontFamily;
+            }
+        }
+        #subscribe-data {
+            max-width: 70%;
+            @media(max-width: 480px) {
+                max-width: 100%;
+            }
+            margin:0 auto;
+
+            .sfs-form-row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 0.8rem 0;
+                input {
+                    border-radius: 0px;
+                    &::placeholder {
+                        text-transform: uppercase;
+                        font-family: $openSansFontFamily;
+                        font-size: 0.9rem;
+                    }
+                }
+                .name-input {
+                    width: 48%;
+                }
+            }
+        }
+
+        .sfs-form-buttons {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            margin-top: 2rem;
+            button {
+                margin: 0.5rem 0;
+                border-radius: 0px;
+                width: 200px;
+                @media(max-width: 480px) {
+                    width: 100%;
+                    margin: 0.2rem 0;
+                }
+                text-transform: uppercase;
+                font-size: 1rem;
+                font-family: $openSansFontFamily;
+                &.unlock {
+                    background-color: #EE220C;
+                }
+                &.cancel {
+                    background-color: $white;
+                    color: #495057;
+                }
+            }
+        }
+    }
+    //
+}

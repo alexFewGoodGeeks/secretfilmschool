@@ -115,6 +115,8 @@ jQuery(function() {
 
         const data = {
             email: $("#email").val(),
+            firstname: $("#firstname").val(),
+            lastname: $("#lastname").val()
         }
         $.ajax({
             url: "/newsletter/subscribe",
@@ -124,7 +126,7 @@ jQuery(function() {
                $("#subscribe-data").hide();
                $("#subscribe-btn").hide();
                $("#subscribe-thanks").removeClass("d-none");
-                setCookie("newsletter_popup", 10, 10000);
+               $(".btn.cancel").text("Close");
                 setCookie("poppedUp", 1, 10000);
             },
             error: function(err) {
@@ -137,8 +139,9 @@ jQuery(function() {
 
     $("html").mouseleave(function(){
         checkCookie();
-       // $('#exampleModalLong').modal({'show':true});
     });
+
+
 
     setTimeout(function(){
         checkCookie();
@@ -147,12 +150,10 @@ jQuery(function() {
 
     function checkCookie() {
         const popUp = getCookie("poppedUp");
-        const maxShow = 3;
         if (popUp != "") {} else {
             $('#exampleModalLong').modal('show');
             const popUp = 1;
             setCookie("poppedUp", popUp, 24);
-            setCookie("newsletter_popup", 1, 24);
         }
     }
 })

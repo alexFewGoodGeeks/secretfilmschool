@@ -11079,3 +11079,124 @@ h1, h2, h3 {
 .gdpr-section .regular-text {
   font-size: 1rem;
 }
+
+.sfs-modal-newsletter .modal-content {
+  background-color: #0076FF;
+  border-radius: 0px;
+  border: 1px solid black;
+}
+.sfs-modal-newsletter .modal-content .modal-header {
+  border-bottom: none;
+}
+.sfs-modal-newsletter .modal-content .modal-body {
+  text-align: center;
+}
+.sfs-modal-newsletter .modal-content .sfs-modal-title h3 {
+  line-height: 0.8;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "Helvetica Neue Condensed Black";
+}
+@media (max-width: 480px) {
+  .sfs-modal-newsletter .modal-content .sfs-modal-title h3 {
+    font-size: 1.5rem;
+  }
+}
+.sfs-modal-newsletter .modal-content #subscribe-thanks p {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1;
+  font-family: "Open Sans", sans-serif;
+}
+.sfs-modal-newsletter .modal-content .sfs-modal-subtitle {
+  padding: 2rem 0;
+  max-width: 70%;
+  margin: 0 auto;
+}
+@media (max-width: 480px) {
+  .sfs-modal-newsletter .modal-content .sfs-modal-subtitle {
+    max-width: 100%;
+  }
+}
+.sfs-modal-newsletter .modal-content .sfs-modal-subtitle p {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1;
+  font-style: italic;
+  font-family: "Open Sans", sans-serif;
+}
+@media (max-width: 480px) {
+  .sfs-modal-newsletter .modal-content .sfs-modal-subtitle p {
+    font-size: 0.8rem;
+  }
+}
+.sfs-modal-newsletter .modal-content #subscribe-data {
+  max-width: 70%;
+  margin: 0 auto;
+}
+@media (max-width: 480px) {
+  .sfs-modal-newsletter .modal-content #subscribe-data {
+    max-width: 100%;
+  }
+}
+.sfs-modal-newsletter .modal-content #subscribe-data .sfs-form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0.8rem 0;
+}
+.sfs-modal-newsletter .modal-content #subscribe-data .sfs-form-row input {
+  border-radius: 0px;
+}
+.sfs-modal-newsletter .modal-content #subscribe-data .sfs-form-row input::-moz-placeholder {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+}
+.sfs-modal-newsletter .modal-content #subscribe-data .sfs-form-row input:-ms-input-placeholder {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+}
+.sfs-modal-newsletter .modal-content #subscribe-data .sfs-form-row input::placeholder {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+}
+.sfs-modal-newsletter .modal-content #subscribe-data .sfs-form-row .name-input {
+  width: 48%;
+}
+.sfs-modal-newsletter .modal-content .sfs-form-buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.sfs-modal-newsletter .modal-content .sfs-form-buttons button {
+  margin: 0.5rem 0;
+  border-radius: 0px;
+  width: 200px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+@media (max-width: 480px) {
+  .sfs-modal-newsletter .modal-content .sfs-form-buttons button {
+    width: 100%;
+    margin: 0.2rem 0;
+  }
+}
+.sfs-modal-newsletter .modal-content .sfs-form-buttons button.unlock {
+  background-color: #EE220C;
+}
+.sfs-modal-newsletter .modal-content .sfs-form-buttons button.cancel {
+  background-color: #ffffff;
+  color: #495057;
+}

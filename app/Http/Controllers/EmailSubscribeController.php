@@ -14,7 +14,7 @@ class EmailSubscribeController extends Controller
     {
         try {
             $email = $request->email;
-            $data = Newsletter::subscribe($email, [], "",  ['tags' => ['New Website Visitor', 'Newsletter']]);
+            $data = Newsletter::subscribe($email, ['FNAME'=> $request->firstname ?? "", 'LNAME'=> $request->lastname ?? ""], "",  ['tags' => ['New Website Visitor', 'Newsletter']]);
 
             return json_encode([
                 'status' => 'ok',
