@@ -9,8 +9,8 @@
         <div class="row">
             <div class="col-lg-12 col-md-12">
                 <div class="heading-text title-text ">
-                    <h1>DISCOVER HOW TO BE <br>A SUCCESSFUL FILMMAKER</h1>
-                    <p class="small-heading">The proven system to take your career all the way.</p>
+                    <h1>HOW TO MAKE A BLOCKBUSTER<br>WITHOUT A BIG BUDGET</h1>
+                    <p class="small-heading">THE PROVEN SUCCESS PROGRAM FOR INDEPENDENT FILMMAKERS.</p>
 
                 </div>
             </div>

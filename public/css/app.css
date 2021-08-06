@@ -10188,7 +10188,7 @@ header {
   }
 }
 .heading-text-wrapper .heading-text.title-text h1, .heading-text-wrapper .heading-text.title-text p {
-  color: #8BB9CE;
+  color: #ffffff;
   float: left;
   text-align: left;
 }
@@ -11203,5 +11203,5 @@ h1, h2, h3 {
 }
 .sfs-modal-newsletter .modal-content .sfs-form-buttons button.cancel {
   background-color: #ffffff;
-  color: #dad6d7;
+  color: #5d4a4f;
 }
