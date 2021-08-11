@@ -112,6 +112,7 @@
     <script>
         $('.summernote').summernote({
             height: $(window).height() - $('.summernote').offset().top - 80,
+            maximumImageFileSize: 900*1024,
             toolbar: [
                 ['style', ['style']],
                 ['font', ['bold', 'italic', 'underline', 'clear']],
