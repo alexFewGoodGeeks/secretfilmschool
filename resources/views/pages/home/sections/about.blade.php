@@ -9,9 +9,9 @@
                     Simon to help bring your film to a worldwide audience just
                     email your request to: hello@secretfilmschool.com
                 </p>
-                <p>
-                    <a href="{{ $settings->free_scholarship_link }}" target="_blank" class="sfs-btn sfs-btn-yellow">APPLY FOR FREE SCHOLARSHIP!</a>
-                </p>
+{{--                <p>--}}
+{{--                    <a href="{{ $settings->free_scholarship_link }}" target="_blank" class="sfs-btn sfs-btn-yellow">APPLY FOR FREE SCHOLARSHIP!</a>--}}
+{{--                </p>--}}
             </div>
             <div class="one-to-one-image">
                 <img class="lazy" data-src="{{ asset('images/1on1coaching.png') }}">
