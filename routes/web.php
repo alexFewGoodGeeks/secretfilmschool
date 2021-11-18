@@ -70,9 +70,12 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('blog', [\App\Http\Controllers\BlogController::class, 'index'])->name('blog.home');
 Route::get('article/{slug}', [\App\Http\Controllers\BlogController::class, 'article'])->name('blog.article');
 
+
+
 /**
  * GDPR page
  */
 Route::get('privacy-policy', [\App\Http\Controllers\Pages\PrivacyPolicyController::class, 'index'])->name('privacy-policy.index');
 Route::get('gdpr', [\App\Http\Controllers\Pages\GdprPageController::class, 'index'])->name('gdpr.index');
+Route::get('black-friday-promo', [\App\Http\Controllers\Pages\BlackFridayController::class, 'index'])->name('blackfriday.index');
 Route::post('newsletter/subscribe', [\App\Http\Controllers\EmailSubscribeController::class, 'store'])->name('newsletter.store');
