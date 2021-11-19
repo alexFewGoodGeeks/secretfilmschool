@@ -27,7 +27,7 @@
         </script>
         <script language="javascript" src="https://snippet.upviral.com/upviral.js"></script>
         <div class="col-md-12" style="text-align: centert">
-            
+
     </section>
 
 
