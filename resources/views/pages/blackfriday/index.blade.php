@@ -1,20 +1,19 @@
-@extends('layouts.public.app')
+<!<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
 
-@section('content')
-
-    @include('pages.includes.header')
-
-    @include('pages.blackfriday.header')
 
     <script>
         window.UpviralConfig = {camp:"S&MARM",
             opacity:'0.6',
             close_popup:"yes"}
-    </script>
-    <script language="javascript" src="https://snippet.upviral.com/upviral.js"></script>
-
-    <script>
-        window.UpviralConfig = {camp:"S&MARM"}
     </script>
     <script language="javascript" src="https://snippet.upviral.com/upviral.js"></script>
 
@@ -28,12 +27,10 @@
         </script>
         <script language="javascript" src="https://snippet.upviral.com/upviral.js"></script>
         <div class="col-md-12" style="text-align: centert">
-
-        <a href="#uvembed123977" style="display: block; text-align: center">click here to open popup</a>
-        </div>
+            
     </section>
 
 
-    @include('pages.includes.footer')
 
-@endsection
+</body>
+</html>
